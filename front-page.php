@@ -21,8 +21,8 @@ get_header();
 		<?php
 		while ( have_posts() ) :
 			the_post();
-			echo get_post_meta(get_the_ID(), "hero_image", true);
-            // echo get_post_meta(get_the_ID(), "hero_quote", true);
+			return get_post_meta(get_the_ID(), "hero_image", true);
+            echo get_post_meta(get_the_ID(), "hero_quote", true);
 			get_template_part( 'template-parts/content', 'page' );
 
 			// If comments are open or we have at least one comment, load up the comment template.
