@@ -21,9 +21,6 @@ get_header();
 		<?php
 		while ( have_posts() ) :
 			the_post();
-			function get_post_meta( $post_id, $key = '', $single = false ) {
-				return get_metadata('post', $post_id, $key, $single);
-			}
 			// echo get_post_meta(get_the_ID(), "hero_image", true);
             echo get_post_meta(get_the_ID(), "hero_quote", true);
 			get_template_part( 'template-parts/content', 'page' );
