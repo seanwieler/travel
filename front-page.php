@@ -23,7 +23,7 @@ get_header();
 			the_post();
 
 			$image = get_field('hero_image');
-			$size = '1920px , 1080px'; // (thumbnail, medium, large, full or custom size)
+			$size = '50%'; // (thumbnail, medium, large, full or custom size)
 			
 			if( $image ) {
 			
