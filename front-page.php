@@ -22,9 +22,7 @@ get_header();
 		while ( have_posts() ) :
 			the_post();
 			$image = get_field('hero_image');
-			if(! empty($image)): ?>
-			"alt="<?php echo $image['alt']; 
-			endif;
+			echo $image['alt']; 
 			// echo get_post_meta(get_the_ID(), "hero_image", true);
             echo get_post_meta(get_the_ID(), "hero_quote", true);
 			get_template_part( 'template-parts/content', 'page' );
