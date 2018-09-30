@@ -21,7 +21,7 @@ get_header();
 		<?php
 		while ( have_posts() ) :
 			the_post();
-			$image = get_field('hero-image');
+			$image = get_field('hero_image');
 			if(! empty($image)): ?>
 			"alt="<?php echo $image['alt']; 
 			endif;
