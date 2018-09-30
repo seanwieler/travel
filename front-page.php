@@ -22,13 +22,14 @@ get_header();
 		while ( have_posts() ) :
 			the_post();
 
-$image = get_field('hero_image');
-
-if( !empty($image) ): ?>
-
-	<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-
-<?php endif;
+			$image = get_field('hero_image');
+			$size = 'full'; // (thumbnail, medium, large, full or custom size)
+			
+			if( $image ) {
+			
+				echo wp_get_attachment_image( $image, $size );
+			
+			}
 			// echo get_post_meta(get_the_ID(), "hero_image", true);
             echo get_post_meta(get_the_ID(), "hero_quote", true);
 			get_template_part( 'template-parts/content', 'page' );
