@@ -24,7 +24,7 @@ get_header();
 			$image = get_field('hero-image');
 			if(! empty($image)): ?>
 			"alt="<?php echo $image['alt']; 
-			endif; ?>
+			endif;
 			// echo get_post_meta(get_the_ID(), "hero_image", true);
             echo get_post_meta(get_the_ID(), "hero_quote", true);
 			get_template_part( 'template-parts/content', 'page' );
