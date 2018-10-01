@@ -31,7 +31,8 @@ get_header();
 			
 			}
 			// echo get_post_meta(get_the_ID(), "hero_image", true);
-            echo get_post_meta(get_the_ID(), "hero_quote", true);
+			echo get_post_meta(get_the_ID(), "hero_quote", true);?>
+			<h2 class="decorated"><span>My Title</span></h2> <?php
 			get_template_part( 'template-parts/content', 'page' );
 
 			// If comments are open or we have at least one comment, load up the comment template.
