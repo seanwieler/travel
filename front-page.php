@@ -32,9 +32,24 @@ get_header();
 			}
 			echo get_post_meta(get_the_ID(), "hero_quote", true);?>
 			<h2 class="decorated"><span><?php echo get_post_meta(get_the_ID(), "section_1_title", true);?></span></h2> 
-			<div class="section-one-content"> <?php echo get_post_meta(get_the_ID(), "section_1_content", true); ?> </div> 
-			<h2 class="decorated"><span><?php echo get_post_meta(get_the_ID(), "recent_posts_title", true);?></span></h2> 
+			<div class="section-one-content"> <?php echo get_post_meta(get_the_ID(), "section_1_content", true); ?> </div> <?php /*
+			<h2 class="decorated"><span><?php echo get_post_meta(get_the_ID(), "recent_posts_title", true);?></span></h2> */ ?>
 			<?php get_template_part( 'template-parts/content', 'page' ); ?> 
+			<ul>
+			<!-- Define our WP Query Parameters
+			<?php $the_query = new WP_Query( 'posts_per_page=5' ); ?>
+ 			// Start our WP Query
+			<?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
+ 			// Display the Post Title with Hyperlink-->
+			<li><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></li>
+ 			<!-- Display the Post Excerpt -->
+			<li><?php the_excerpt(__('(more…)')); ?></li>
+ 			<!--  Repeat the process and reset once it hits the limit -->
+			<?php 
+			endwhile;
+			wp_reset_postdata();
+			?>
+			</ul>
 			<h2 class="decorated"><span><?php echo get_post_meta(get_the_ID(), "section_2_title", true);?></span></h2> 
 			<?php photo_gallery(1); ?>
 			<div class="section-one-content"> <?php echo get_post_meta(get_the_ID(), "section_2_content", true); ?> </div> <?php
