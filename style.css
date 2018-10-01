@@ -474,7 +474,8 @@ h2 {
   left: 100%;
 }
 .entry-content {
-  width: 80%;
+  width: 50%;
+  text-align: center;
 }
 /*--------------------------------------------------------------
 # Elements
