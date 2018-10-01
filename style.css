@@ -446,7 +446,7 @@ h2 {
   font-size: 32px;
   font-family: "roboto condensed", sans-serif;
   color: #ff0000;
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 .decorated {
   overflow: hidden;
