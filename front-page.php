@@ -22,14 +22,14 @@ get_header();
 		while ( have_posts() ) :
 			the_post();
 
-			$image = get_field('hero_image');
+			/*$image = get_field('hero_image');
 			$size = '50%'; // (thumbnail, medium, large, full or custom size)
 			
 			if( $image ) {
 			
 				echo wp_get_attachment_image( $image, $size );
 			
-			}
+			}*/
 			echo get_post_meta(get_the_ID(), "hero_quote", true);?>
 			<h2 class="decorated"><span><?php echo get_post_meta(get_the_ID(), "section_1_title", true);?></span></h2> 
 			<div class="section-one-content"> <?php echo get_post_meta(get_the_ID(), "section_1_content", true); ?> </div> 
