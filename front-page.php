@@ -32,8 +32,8 @@ get_header();
 			}
 			// echo get_post_meta(get_the_ID(), "hero_image", true);
 			echo get_post_meta(get_the_ID(), "hero_quote", true);?>
-			<h2 class="decorated"><span><?php echo get_post_meta(get_the_ID(), "section_1_title", true);?></span></h2> <?php 
-			echo get_post_meta(get_the_ID(), "section_1_content", true);
+			<h2 class="decorated"><span><?php echo get_post_meta(get_the_ID(), "section_1_title", true);?></span></h2> 
+			<div class="section-one-content"> <?php echo get_post_meta(get_the_ID(), "section_1_content", true); ?> </div> <?php
 			get_template_part( 'template-parts/content', 'page' );
 
 			// If comments are open or we have at least one comment, load up the comment template.
