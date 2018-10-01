@@ -90,7 +90,6 @@ h1 {
 h2 {
   font-size: 50px;
   font-family: "roboto condensed", sans-serif;
-  color: #ffffff;
   text-transform: uppercase;
 }
 /* ## Grouping content
@@ -479,6 +478,12 @@ big {
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 30px;
+}
+.black-bg {
+  color: #ffffff;
+}
+.white-bg {
+  color: #000000;
 }
 /*--------------------------------------------------------------
 # Elements
