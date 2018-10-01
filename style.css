@@ -538,8 +538,9 @@ table {
   width: 100%;
 }
 .rp-background {
-  height: 600px;
   background-image: url("travel-blog-bg.png");
+  background-repeat: no-repeat;
+  background-size: auto;
 }
 /*--------------------------------------------------------------
 ## Links
