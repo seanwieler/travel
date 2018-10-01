@@ -33,11 +33,12 @@ get_header();
 			echo get_post_meta(get_the_ID(), "hero_quote", true);?>
 			<h2 class="decorated black-bg"><span><?php echo get_post_meta(get_the_ID(), "section_1_title", true);?></span></h2> 
 			<div class="section-one-content"> <?php echo get_post_meta(get_the_ID(), "section_1_content", true); ?> </div> 
-			<div class="wp-block-cover-image aligncenter" style="background-image:url(http://zeroanalog.ca/testsite/wp-content/uploads/2018/10/travel-blog-bg.png)">
-			<h2 class="decorated white-bg"><span><?php echo get_post_meta(get_the_ID(), "recent_posts_title", true);?></span></h2> 
-			<?php get_template_part( 'template-parts/content', 'page' ); ?> </div>
-			<h2 class="decorated black-bg"><span><?php echo get_post_meta(get_the_ID(), "section_2_title", true);?></span></h2> 
-			<?php photo_gallery(1); ?>
+			<div class="rp-background">
+				<h2 class="decorated white-bg"><span><?php echo get_post_meta(get_the_ID(), "recent_posts_title", true);?></span></h2> 
+				<?php get_template_part( 'template-parts/content', 'page' ); ?> </div>
+				<h2 class="decorated black-bg"><span><?php echo get_post_meta(get_the_ID(), "section_2_title", true);?></span></h2> 
+				<?php photo_gallery(1); ?>
+			</div>
 			<div class="section-one-content"> <?php echo get_post_meta(get_the_ID(), "section_2_content", true); ?> </div> <?php
 
 			// If comments are open or we have at least one comment, load up the comment template.
