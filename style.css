@@ -475,7 +475,7 @@ h2 {
 }
 .entry-content {
   width: 50%;
-  margin: 0;
+  margin: 200px 0 0 0;
   position: absolute;
   top: 50%;
   left: 50%;
