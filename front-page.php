@@ -36,6 +36,7 @@ get_header();
 			<div class="section-one-content"> <?php echo get_post_meta(get_the_ID(), "section_1_content", true); ?> </div> <?php
 			get_template_part( 'template-parts/content', 'page' ); ?>
 			<h2 class="decorated"><span><?php echo get_post_meta(get_the_ID(), "section_2_title", true);?></span></h2> 
+			<?php photo_gallery(1); ?>
 			<div class="section-one-content"> <?php echo get_post_meta(get_the_ID(), "section_2_content", true); ?> </div> <?php
 
 			// If comments are open or we have at least one comment, load up the comment template.
