@@ -432,10 +432,9 @@ ins {
 big {
   font-size: 125%;
 }
-.hero-quote {
-  font-family: "America", sans-serif;
-  font-size: 70px;
-}
+/*--------------------------------------------------------------
+## Custom CSS
+--------------------------------------------------------------*/
 .entry-title {
   display: none;
 }
