@@ -443,9 +443,10 @@ big {
 }
 /* headlines with lines */
 h2 {
-  font-size: 18px;
+  font-size: 32px;
   font-family: "roboto condensed", sans-serif;
   color: #ff0000;
+  text-transform: capitalize;
 }
 .decorated {
   overflow: hidden;
