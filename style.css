@@ -473,7 +473,8 @@ h2 {
 .decorated > span:after {
   left: 100%;
 }
-.entry-content {
+.entry-content,
+.page-content {
   width: 700px ;
   margin-left: auto ;
   margin-right: auto ;
