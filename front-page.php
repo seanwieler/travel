@@ -48,7 +48,7 @@ get_header();
 
 			<?php photo_gallery(1); ?>
 			<?php if(get_field('section_2_content')): ?>
-			<div class="section-content-blackbg"> <?php the_field('section_2_content'); ?> </div>
+				<div class="section-content-blackbg"> <?php the_field('section_2_content'); ?> </div>
 			<?php endif;?>
 
 			<div class="rp-background">
