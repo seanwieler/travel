@@ -455,7 +455,6 @@ big {
   position: relative;
   display: inline-block;
 }
-/* headline decoration with lines on each side of section title */
 .decorated > span:before,
 .decorated > span:after {
   content: '';
@@ -467,11 +466,12 @@ big {
   margin: 0 30px;
 }
 .decorated > span:before {
-  right: 100%;
+  right: 100%);
 }
 .decorated > span:after {
   left: 100%;
 }
+/* headline decoration with lines on each side of section title */
 .section-content-blackbg {
   width: 60%;
   margin-left: auto;
