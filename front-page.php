@@ -33,10 +33,10 @@ get_header();
 				<h2 class="decorated white-bg"><span><?php echo get_post_meta(get_the_ID(), "recent_posts_title", true);?></span></h2> 
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
 			</div> <?php
-			$image = get_field('section_2_image');
-			$size = '50%'; // (thumbnail, medium, large, full or custom size)
-			if( $image ) {
-				echo wp_get_attachment_image( $image, $size );
+			$image2 = get_field('section_2_image');
+			$size2 = '50%'; // (thumbnail, medium, large, full or custom size)
+			if( $image2 ) {
+				echo wp_get_attachment_image( $image2, $size2 );
 			} ?>
 			<h2 class="decorated black-bg"><span><?php echo get_post_meta(get_the_ID(), "section_2_title", true);?></span></h2> 
 				<?php photo_gallery(1); ?>
