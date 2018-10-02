@@ -371,7 +371,6 @@ input,
 select,
 optgroup,
 textarea {
-  color: #ffffff;
   font-family: "roboto", sans-serif;
   font-size: 16px;
   font-size: 1rem;
@@ -478,6 +477,7 @@ big {
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 30px;
+  color: #ffffff;
 }
 .section-content-whitebg {
   width: 60%;
