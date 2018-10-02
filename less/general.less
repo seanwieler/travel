@@ -486,19 +486,19 @@ big {
 }
 /* headline decoration with lines on each side of section title */
 
-.section-content-blackbg {
+.section-content-with-bg() {
 	width: 60%;
 	margin-left: auto;
 	margin-right: auto;
 	padding-bottom: 30px;
+}
+.section-content-blackbg {
+	.section-content-with-bg();
 	color:	#ffffff;
 }
 
 .section-content-whitebg {
-	width: 60%;
-	margin-left: auto;
-	margin-right: auto;
-	padding-bottom: 30px;
+	.section-content-with-bg();
 	color: #000000;
 }
 
