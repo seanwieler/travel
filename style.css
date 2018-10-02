@@ -466,7 +466,7 @@ big {
   margin: 0 30px;
 }
 .decorated > span:before {
-  right: 100%);
+  right: 100%;
 }
 .decorated > span:after {
   left: 100%;
