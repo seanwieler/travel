@@ -33,20 +33,7 @@ get_header();
 			<div class="section-content-blackbg"> <?php echo get_post_meta(get_the_ID(), "section_1_content", true); ?> </div> 
 
 			<div class="rp-background">
-				<h2 class="decorated white-bg"><span><?php echo get_post_meta(get_the_ID(), "recent_posts_title", true);?></span></h2>
-				<?php 
-$args = array( 'posts_per_page' => '3' );
-$recent_posts = new WP_Query($args);
-while( $recent_posts->have_posts() ) :  
-    $recent_posts->the_post() ?>
-    <li>
-        <a href="<?php echo get_permalink() ?>"><?php the_title() ?></a> 
-        <?php if ( has_post_thumbnail() ) : ?>
-            <?php the_post_thumbnail('thumbnail') ?>
-        <?php endif ?>    
-    </li>
-<?php endwhile; ?>
-<?php wp_reset_postdata(); # reset post data so that other queries/loops work ?>  
+				<h2 class="decorated white-bg"><span><?php echo get_post_meta(get_the_ID(), "recent_posts_title", true);?></span></h2> 
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
 			</div> <?php
 
