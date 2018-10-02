@@ -13,8 +13,8 @@
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer foot-text-color">
-		<div class="site-info">
+	<footer id="colophon" class="site-footer">
+		<div class="site-info foot-text-color">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'Travel' ) ); ?>">
 				<?php
 				/* translators: %s: CMS name, i.e. WordPress. */
