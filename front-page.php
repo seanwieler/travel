@@ -28,7 +28,7 @@ get_header();
 			}
 			?>
 			<h2 class="decorated black-bg"><span><?php echo get_post_meta(get_the_ID(), "section_1_title", true);?></span></h2> 
-			<div class="section-one-content"> <?php echo get_post_meta(get_the_ID(), "section_1_content", true); ?> </div> 
+			<div class="section-content-blackbg"> <?php echo get_post_meta(get_the_ID(), "section_1_content", true); ?> </div> 
 			<div class="rp-background">
 				<h2 class="decorated white-bg"><span><?php echo get_post_meta(get_the_ID(), "recent_posts_title", true);?></span></h2> 
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
@@ -40,10 +40,10 @@ get_header();
 			} ?>
 			<h2 class="decorated black-bg"><span><?php echo get_post_meta(get_the_ID(), "section_2_title", true);?></span></h2> 
 				<?php photo_gallery(1); ?>
-			<div class="section-one-content"> <?php echo get_post_meta(get_the_ID(), "section_2_content", true); ?> </div>
+			<div class="section-content-blackbg"> <?php echo get_post_meta(get_the_ID(), "section_2_content", true); ?> </div>
 			<div class="rp-background">
 				<h2 class="decorated white-bg"><span><?php echo get_post_meta(get_the_ID(), "section_3_title", true);?></span></h2> 
-				<div class="section-one-content"> <?php echo get_post_meta(get_the_ID(), "section_3_content", true); ?> </div>
+				<div class="section-content-whitebg"> <?php echo get_post_meta(get_the_ID(), "section_3_content", true); ?> </div>
 			</div> <?php
 
 			// If comments are open or we have at least one comment, load up the comment template.
