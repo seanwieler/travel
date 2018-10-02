@@ -479,6 +479,13 @@ big {
   margin-right: auto;
   padding-bottom: 30px;
 }
+.section-one-content {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 30px;
+  color: #000000;
+}
 .black-bg {
   color: #ffffff;
 }
