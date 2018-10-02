@@ -47,6 +47,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # Alignments
 # Clearings
 # Content
+	## Custom CSS
 	## Posts and pages
 	## Comments
 # Infinite scroll
@@ -607,14 +608,14 @@ a:active {
   top: 0;
 }
 .main-navigation ul ul li:hover > ul,
-.main-navigation ul ul li.focus > ul {
+.main-navigation ul ul li .focus > ul {
   left: 100%;
 }
 .main-navigation ul ul a {
   width: 200px;
 }
 .main-navigation ul li:hover > ul,
-.main-navigation ul li.focus > ul {
+.main-navigation ul li .focus > ul {
   left: auto;
 }
 .main-navigation li {
@@ -722,16 +723,16 @@ a:active {
 # Clearings
 --------------------------------------------------------------*/
 .clear:before,
-.clear:after,
 .entry-content:before,
-.entry-content:after,
 .comment-content:before,
-.comment-content:after,
 .site-header:before,
-.site-header:after,
 .site-content:before,
-.site-content:after,
 .site-footer:before,
+.clear:after,
+.entry-content:after,
+.comment-content:after,
+.site-header:after,
+.site-content:after,
 .site-footer:after {
   content: "";
   display: table;
@@ -748,6 +749,76 @@ a:active {
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Custom CSS
+--------------------------------------------------------------*/
+.site-branding {
+  height: 72px;
+  width: auto;
+}
+.custom-logo {
+  height: 72px;
+  width: auto;
+}
+/* headlines with lines */
+.decorated {
+  overflow: hidden;
+  text-align: center;
+  padding-top: 30px;
+}
+.decorated > span {
+  position: relative;
+  display: inline-block;
+}
+.decorated > span:before,
+.decorated > span:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  border-bottom: 5px solid;
+  width: 400px;
+  /* half of limiter*/
+  margin: 0 30px;
+}
+.decorated > span:before {
+  right: 100%;
+}
+.decorated > span:after {
+  left: 100%;
+}
+/* headline decoration with lines on each side of section title */
+.section-content-blackbg {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 30px;
+  color: #ffffff;
+}
+.section-content-whitebg {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 30px;
+  color: #000000;
+}
+.black-bg {
+  color: #ffffff;
+}
+.white-bg {
+  color: #000000;
+}
+.rp-background {
+  background-image: url("./img/travel-blog-bg.png");
+  /* The image used */
+  background-color: #cccccc;
+  /* Used if the image is unavailable */
+  background-position: center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: cover;
+  /* Resize the background image to cover the entire container */
+}
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/

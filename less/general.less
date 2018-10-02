@@ -20,6 +20,7 @@
 # Alignments
 # Clearings
 # Content
+	## Custom CSS
 	## Posts and pages
 	## Comments
 # Infinite scroll
@@ -34,6 +35,9 @@
 
 /* ##Document
 	 ========================================================================== */
+
+@body-font: "roboto", sans-serif; // in variables
+
 
 /**
  * 1. Correct the line height in all browsers.
@@ -616,51 +620,49 @@ a:hover, a:active {
 	display: block;
 	float: left;
 	width: 100%;
-}
-
-.main-navigation ul {
-	display: none;
-	list-style: none;
-	margin: 0;
-	padding-left: 0;
-}
-
-.main-navigation ul ul {
-	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-	float: left;
-	position: absolute;
-	top: 100%;
-	left: -999em;
-	z-index: 99999;
-}
-
-.main-navigation ul ul ul {
-	left: -999em;
-	top: 0;
-}
-
-.main-navigation ul ul li:hover > ul,
-.main-navigation ul ul li.focus > ul {
-	left: 100%;
-}
-
-.main-navigation ul ul a {
-	width: 200px;
-}
-
-.main-navigation ul li:hover > ul,
-.main-navigation ul li.focus > ul {
-	left: auto;
-}
-
-.main-navigation li {
-	float: left;
-	position: relative;
-}
-
-.main-navigation a {
-	display: block;
-	text-decoration: none;
+	ul {
+		display: none;
+		list-style: none;
+		margin: 0;
+		padding-left: 0;
+		ul {
+			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+			float: left;
+			position: absolute;
+			top: 100%;
+			left: -999em;
+			z-index: 99999;
+			ul {
+				left: -999em;
+				top: 0;
+			}
+			li {
+				&:hover, .focus {
+					> ul {
+						left: 100%;
+					}
+				}
+			}
+			a {
+				width: 200px;
+			}
+		}		
+		li {
+			&:hover, .focus {
+				> ul {
+					left: auto;
+				}
+			}
+		}
+	}
+	li {
+		float: left;
+		position: relative;
+	}
+	a {
+		display: block;
+		text-decoration: none;
+	}
 }
 
 /* Small menu. */
@@ -678,26 +680,25 @@ a:hover, a:active {
 	}
 }
 
-.site-main .comment-navigation, .site-main
-.posts-navigation, .site-main
-.post-navigation {
+.site-main .comment-navigation, 
+.site-main .posts-navigation, 
+.site-main .post-navigation {
 	margin: 0 0 1.5em;
 	overflow: hidden;
 }
 
-.comment-navigation .nav-previous,
-.posts-navigation .nav-previous,
-.post-navigation .nav-previous {
-	float: left;
-	width: 50%;
-}
-
-.comment-navigation .nav-next,
-.posts-navigation .nav-next,
-.post-navigation .nav-next {
-	float: right;
-	text-align: right;
-	width: 50%;
+.comment-navigation, 
+.posts-navigation, 
+.post-navigation {
+	.nav-previous {
+		float: left;
+		width: 50%;
+	}
+	.nav-next {
+		float: right;
+		text-align: right;
+		width: 50%;
+	}
 }
 
 /*--------------------------------------------------------------
@@ -769,36 +770,96 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 # Clearings
 --------------------------------------------------------------*/
-.clear:before,
-.clear:after,
-.entry-content:before,
-.entry-content:after,
-.comment-content:before,
-.comment-content:after,
-.site-header:before,
-.site-header:after,
-.site-content:before,
-.site-content:after,
-.site-footer:before,
-.site-footer:after {
-	content: "";
-	display: table;
-	table-layout: fixed;
-}
 
-.clear:after,
-.entry-content:after,
-.comment-content:after,
-.site-header:after,
-.site-content:after,
-.site-footer:after {
-	clear: both;
+.clear,
+.entry-content,
+.comment-content,
+.site-header,
+.site-content,
+.site-footer {
+	&:before, &:after {
+		content: "";
+		display: table;
+		table-layout: fixed;
+	}
+	&:after {
+		clear: both;
+	}
 }
 
 
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Custom CSS
+--------------------------------------------------------------*/
+
+.site-branding {
+	height: 72px;
+	width: auto;
+}
+
+.custom-logo {
+	height: 72px;
+	width: auto;
+}
+
+/* headlines with lines */
+
+.decorated {
+	overflow: hidden;
+	text-align: center;
+	padding-top: 30px;
+	> span {
+		position: relative;
+		display: inline-block;
+		&:before, &:after {
+			content: '';
+			position: absolute;
+			top: 50%;
+			border-bottom: 5px solid;
+			width: 400px; /* half of limiter*/
+			margin: 0 30px;
+		}
+		&:before {right: 100%;}
+		&:after {left: 100%;}
+	}
+}
+/* headline decoration with lines on each side of section title */
+
+.section-content-with-bg() {
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 30px;
+}
+.section-content-blackbg {
+	.section-content-with-bg();
+	color:	#ffffff;
+}
+
+.section-content-whitebg {
+	.section-content-with-bg();
+	color: #000000;
+}
+
+.black-bg {
+	color: #ffffff;
+}
+
+.white-bg {
+	color: #000000;
+}
+
+.rp-background {
+	background-image: url("./img/travel-blog-bg.png"); /* The image used */
+ 	background-color: #cccccc; /* Used if the image is unavailable */
+  	// height: 500px; /* You must set a specified height */
+  	background-position: center; /* Center the image */
+  	background-repeat: no-repeat; /* Do not repeat the image */
+  	background-size: cover; /* Resize the background image to cover the entire container */
+}
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
@@ -909,38 +970,14 @@ object {
 	text-align: center;
 	vertical-align: top;
 	width: 100%;
-}
-
-.gallery-columns-2 .gallery-item {
-	max-width: 50%;
-}
-
-.gallery-columns-3 .gallery-item {
-	max-width: 33.33%;
-}
-
-.gallery-columns-4 .gallery-item {
-	max-width: 25%;
-}
-
-.gallery-columns-5 .gallery-item {
-	max-width: 20%;
-}
-
-.gallery-columns-6 .gallery-item {
-	max-width: 16.66%;
-}
-
-.gallery-columns-7 .gallery-item {
-	max-width: 14.28%;
-}
-
-.gallery-columns-8 .gallery-item {
-	max-width: 12.5%;
-}
-
-.gallery-columns-9 .gallery-item {
-	max-width: 11.11%;
+	.gallery-columns-2 & { max-width: 50%; }
+	.gallery-columns-3 & { max-width: 33.33%; }
+	.gallery-columns-4 & { max-width: 25%; }
+	.gallery-columns-5 & { max-width: 20%; }
+	.gallery-columns-6 & { max-width: 16.66%; }
+	.gallery-columns-7 & { max-width: 14.28%; }
+	.gallery-columns-8 & { max-width: 12.5%; }
+	.gallery-columns-9 & { max-width: 11.11%; }
 }
 
 .gallery-caption {
