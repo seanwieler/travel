@@ -47,8 +47,9 @@ get_header();
 			<h2 class="decorated black-bg"><span><?php echo get_post_meta(get_the_ID(), "section_2_title", true);?></span></h2>
 
 			<?php photo_gallery(1); ?>
-
-			<div class="section-content-blackbg"> <?php echo get_post_meta(get_the_ID(), "section_2_content", true); ?> </div>
+			<?php if(get_field('section_2_content')): ?>
+			<div class="section-content-blackbg"> <?php the_field('section_2_content'); ?> </div>
+			<?php endif;?>
 
 			<div class="rp-background">
 				<h2 class="decorated white-bg"><span><?php echo get_post_meta(get_the_ID(), "section_3_title", true);?></span></h2> 
