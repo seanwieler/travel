@@ -1,5 +1,6 @@
 <?php
 /**
+ * Template Name: General Page
  * The template for displaying all pages
  *
  * This is the template that displays all pages by default.
@@ -28,7 +29,7 @@ get_header();
 				echo wp_get_attachment_image( $image, $size );
 			}?>
 
-			<h2 class="decorated black-bg"><span><?php echo get_field('section_1_title' , $format_value=false);?></span></h2> 
+			<h2 class="decorated black-bg"><span><?php echo get_field('section_1_title');?></span></h2> 
 
 			<div class="section-content-blackbg"> <?php echo get_post_meta(get_the_ID(), "section_1_content", true); ?> </div> 
 
