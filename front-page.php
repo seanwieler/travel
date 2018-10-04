@@ -32,7 +32,7 @@ get_header();
 			<?php if(get_field('section_1_title')): ?>
 			<h2 class="decorated black-bg"><span><?php the_field('section_1_title');?></span></h2> 
 			<?php endif;?>
-			
+
 			<div class="section-content-blackbg"> <?php echo get_post_meta(get_the_ID(), "section_1_content", true); ?> </div> 
 
 			<div class="rp-background">
@@ -56,10 +56,16 @@ get_header();
 				<div class="section-content-blackbg"> <?php the_field('section_2_content'); ?> </div>
 			<?php endif;?>
 
+			<?php if(get_field('section_3_title')): ?>
 			<div class="rp-background">
 				<h2 class="decorated white-bg"><span><?php echo get_post_meta(get_the_ID(), "section_3_title", true);?></span></h2> 
+			<?php endif; ?>
+
+			<?php if(get_field('section_2_content')): ?>
 				<div class="section-content-whitebg"> <?php echo get_post_meta(get_the_ID(), "section_3_content", true); ?> </div>
-			</div> <?php
+			</div> 
+			<?php endif;
+
 
 			$image3 = get_field('contact_image');
 			$size3 = '50%'; // (thumbnail, medium, large, full or custom size)
