@@ -73,7 +73,9 @@ get_header();
 				echo wp_get_attachment_image( $image3, $size3 );
 			}?>
 
-			<div class="section-content-blackbg"> <?php echo get_post_meta(get_the_ID(), "contact_content", true); ?> </div> <?php
+			<?php if(get_field('contact_content')): ?>
+			<div class="section-content-blackbg"> <?php echo get_post_meta(get_the_ID(), "contact_content", true); ?> </div> 
+			<?php endif;
 
 			// If comments are open or we have at least one comment, load up the comment template.
 			if ( comments_open() || get_comments_number() ) :
