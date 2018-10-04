@@ -37,10 +37,12 @@ get_header();
 			<div class="section-content-blackbg"> <?php echo get_post_meta(get_the_ID(), "section_1_content", true); ?> </div> 
 			<?php endif; ?>
 			
+			<?php if(get_field('recent_posts_title')): ?>
 			<div class="rp-background">
 				<h2 class="decorated white-bg"><span><?php echo get_post_meta(get_the_ID(), "recent_posts_title", true);?></span></h2> 
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
-			</div> <?php
+			</div> 
+			<?php endif;
 
 			$image2 = get_field('section_2_image');
 			$size2 = '50%'; // (thumbnail, medium, large, full or custom size)
