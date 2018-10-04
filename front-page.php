@@ -65,7 +65,7 @@ get_header();
 				<h2 class="decorated white-bg"><span><?php echo get_post_meta(get_the_ID(), "section_3_title", true);?></span></h2> 
 			<?php endif; ?>
 
-			<?php if(get_field('section_2_content')): ?>
+			<?php if(get_field('section_3_content')): ?>
 				<div class="section-content-whitebg"> <?php echo get_post_meta(get_the_ID(), "section_3_content", true); ?> </div>
 			</div> 
 			<?php endif;
