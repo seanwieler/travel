@@ -29,8 +29,10 @@ get_header();
 				echo wp_get_attachment_image( $image, $size );
 			}?>
 
+			<?php if(get_field('section_1_title')): ?>
 			<h2 class="decorated black-bg"><span><?php the_field('section_1_title');?></span></h2> 
-
+			<?php endif;?>
+			
 			<div class="section-content-blackbg"> <?php echo get_post_meta(get_the_ID(), "section_1_content", true); ?> </div> 
 
 			<div class="rp-background">
@@ -44,9 +46,12 @@ get_header();
 				echo wp_get_attachment_image( $image2, $size2 );
 			} ?>
 
+			<?php if(get_field('section_2_title')): ?>
 			<h2 class="decorated black-bg"><span><?php echo get_post_meta(get_the_ID(), "section_2_title", true);?></span></h2>
+			<?php endif;?>
 
 			<?php photo_gallery(1); ?>
+
 			<?php if(get_field('section_2_content')): ?>
 				<div class="section-content-blackbg"> <?php the_field('section_2_content'); ?> </div>
 			<?php endif;?>
