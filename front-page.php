@@ -33,8 +33,10 @@ get_header();
 			<h2 class="decorated black-bg"><span><?php the_field('section_1_title');?></span></h2> 
 			<?php endif;?>
 
+			<?php if(get_field('section_1_content')): ?>
 			<div class="section-content-blackbg"> <?php echo get_post_meta(get_the_ID(), "section_1_content", true); ?> </div> 
-
+			<?php endif; ?>
+			
 			<div class="rp-background">
 				<h2 class="decorated white-bg"><span><?php echo get_post_meta(get_the_ID(), "recent_posts_title", true);?></span></h2> 
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
