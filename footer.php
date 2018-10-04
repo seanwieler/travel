@@ -14,6 +14,7 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer">
+	<?php if( function_exists('slbd_display_widgets') ) { echo slbd_display_widgets(); } ?>
 	<div class="site-info foot-text-color">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'Travel' ) ); ?>">
 				<?php
