@@ -45,9 +45,9 @@ get_header();
 
             <?php if(get_field('section_2_title')): ?>
                 <div class="rp-background">
-                    <h2 class="decorated black-bg"><span><?php echo get_post_meta(get_the_ID(), "section_2_title", true);?></span></h2>
+                    <h2 class="decorated white-bg"><span><?php echo get_post_meta(get_the_ID(), "section_2_title", true);?></span></h2>
                     <?php if(get_field('section_2_content')): ?>
-                        <div class="section-content-blackbg"> <?php the_field('section_2_content'); ?> </div>
+                        <div class="section-content-whitebg"> <?php the_field('section_2_content'); ?> </div>
                     <?php endif;?>
                 </div> 
         <?php endif; ?>
