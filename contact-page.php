@@ -37,7 +37,7 @@ get_header();
 			    <div class="section-content-blackbg"> <?php echo get_post_meta(get_the_ID(), "section_1_content", true); ?> </div> 
 			<?php endif; ?>
 			
-            <div class="white-background">
+            <div class="white-bg">
             <?php echo do_shortcode('[wpforms id="271" title="false" description="false"]'); ?>
             </div>  <?php
 
