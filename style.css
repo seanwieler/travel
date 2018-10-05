@@ -502,6 +502,13 @@ big {
   background-size: cover;
   /* Resize the background image to cover the entire container */
 }
+.white-background {
+  background-color: #ffffff;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
@@ -826,7 +833,7 @@ a:active {
   display: block;
 }
 .hentry {
-  margin: 0 0 1.5em;
+  margin: 0 0 0;
 }
 .updated:not(.published) {
   display: none;
