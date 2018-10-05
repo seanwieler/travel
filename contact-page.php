@@ -38,7 +38,7 @@ get_header();
 			<?php endif; ?>
 			
             <div class="white-background">
-            <?php echo do_shortcode('[wpforms id="271" title="false" description="false"]'); ?>
+            <?php echo do_shortcode('[Form id="1"]'); ?>
             </div>  <?php
 
 			// If comments are open or we have at least one comment, load up the comment template.
