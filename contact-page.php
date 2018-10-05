@@ -37,8 +37,8 @@ get_header();
 			    <div class="section-content-blackbg"> <?php echo get_post_meta(get_the_ID(), "section_1_content", true); ?> </div> 
 			<?php endif; ?>
 			
-            <div class="white-bg">
-            <?php echo do_shortcode('[wpforms id="271" title="false" description="false"]'); ?>
+            <div class="white-background">
+       
             </div>  <?php
 
 			// If comments are open or we have at least one comment, load up the comment template.
