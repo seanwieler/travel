@@ -35,9 +35,9 @@ get_header();
 
 			<?php if(get_field('section_1_content')): ?>
 			    <div class="section-content-blackbg"> <?php echo get_post_meta(get_the_ID(), "section_1_content", true); ?> </div> 
-			<?php endif;
+			<?php endif; ?>
 			
-			echo do_shortcode("[contact-form-7 id="249" title="Contact Me Form"]");
+			<?php echo do_shortcode("[shortcode]");
 
 			// If comments are open or we have at least one comment, load up the comment template.
 			if ( comments_open() || get_comments_number() ) :
