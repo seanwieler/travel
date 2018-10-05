@@ -37,7 +37,9 @@ get_header();
 			    <div class="section-content-blackbg"> <?php echo get_post_meta(get_the_ID(), "section_1_content", true); ?> </div> 
 			<?php endif; ?>
 			
-			<?php echo do_shortcode('[wpforms id="271" title="false" description="false"]');
+            <div class="rp-background">
+            <?php echo do_shortcode('[wpforms id="271" title="false" description="false"]'); ?>
+            </div>  <?php
 
 			// If comments are open or we have at least one comment, load up the comment template.
 			if ( comments_open() || get_comments_number() ) :
