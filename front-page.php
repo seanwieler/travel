@@ -52,11 +52,13 @@ get_header();
 
 			<?php if(get_field('section_2_title')): ?>
 			<h2 class="decorated black-bg"><span><?php echo get_post_meta(get_the_ID(), "section_2_title", true);?></span></h2>
-			<?php endif;?>
+			<?php endif;
 
-			<?php photo_gallery(1); ?>
+			if(is_front_page()) {
+				photo_gallery(1);
+			}
 
-			<?php if(get_field('section_2_content')): ?>
+			if(get_field('section_2_content')): ?>
 				<div class="section-content-blackbg"> <?php the_field('section_2_content'); ?> </div>
 			<?php endif;?>
 
