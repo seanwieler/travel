@@ -775,6 +775,11 @@ a:active {
   height: 72px;
   width: auto;
 }
+.small-site-header {
+  height: 50px;
+  width: auto;
+  margin: 5px 0 5px 0;
+}
 /* headlines with lines */
 .decorated {
   overflow: hidden;

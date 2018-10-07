@@ -104,3 +104,10 @@
 		}
 	}( container ) );
 } )();
+$(document).on("scroll", function(e) {
+	if ($(document).scrollTop() > 90) {
+		$('header').addClass("small-site-header");
+	} else {
+		$('header').removeClass("small-site-header");
+	}
+});
