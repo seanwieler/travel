@@ -30,7 +30,7 @@ get_header();
 			}?>
 
 			<?php if(get_field('section_1_title')): ?>
-			<h2 class="decorated black-bg"><span><?php the_field('section_1_title');?></span></h2> 
+			<div class="decorated black-bg"><span><?php the_field('section_1_title');?></span></div>
 			<?php endif;?>
 
 			<?php if(get_field('section_1_content')): ?>
@@ -39,7 +39,7 @@ get_header();
 			
 			<?php if(get_field('recent_posts_title')): ?>
 			<div class="rp-background">
-				<h2 class="decorated white-bg"><span><?php echo get_post_meta(get_the_ID(), "recent_posts_title", true);?></span></h2> 
+				<div class="decorated white-bg"><span><?php echo get_post_meta(get_the_ID(), "recent_posts_title", true);?></span></div>
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
 			</div> 
 			<?php endif;
@@ -51,7 +51,7 @@ get_header();
 			} ?>
 
 			<?php if(get_field('section_2_title')): ?>
-			<h2 class="decorated black-bg"><span><?php echo get_post_meta(get_the_ID(), "section_2_title", true);?></span></h2>
+			<div class="decorated black-bg"><span><?php echo get_post_meta(get_the_ID(), "section_2_title", true);?></span></div>
 			<?php endif;
 
 			if(is_front_page()) {
