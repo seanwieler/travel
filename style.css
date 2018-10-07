@@ -491,15 +491,15 @@ big {
     position: absolute;
     top: 50%;
     border-bottom: 5px solid;
-    width: 10px;
+    width: 50px;
     /* half of limiter*/
     margin: 0 30px;
   }
   .decorated > span:before {
-    right: 100%;
+    right: 50%;
   }
   .decorated > span:after {
-    left: 100%;
+    left: 50%;
   }
 }
 /* headline decoration with lines on each side of section title */
