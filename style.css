@@ -766,13 +766,6 @@ a:active {
 /*--------------------------------------------------------------
 ## Custom CSS
 --------------------------------------------------------------*/
-.sticky {
-  background-color: #c0c0c0;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 99999999;
-}
 .site-branding {
   height: 72px;
   width: auto;

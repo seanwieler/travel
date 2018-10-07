@@ -104,16 +104,3 @@
 		}
 	}( container ) );
 } )();
-
-window.onscroll = function() {myFunction()};
-
-var logo = document.getElementsByClassName("site-branding");
-var sticky = navbar.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    logo.classList.add("sticky")
-  } else {
-    logo.classList.remove("sticky");
-  }
-}
