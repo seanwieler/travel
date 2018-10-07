@@ -105,10 +105,13 @@
 	}( container ) );
 } )();
 
-$(document).on("scroll", function(e) {
-	if ($(document).scrollTop() > 90) {
-		$('site-branding').addClass("sticky");
-	} else {
-		$('site-branding').removeClass("sticky");
+$(window).scroll(function(e){ 
+	var $el = $('.sticky'); 
+	var isPositionFixed = ($el.css('position') == 'fixed');
+	if ($(this).scrollTop() > 200 && !isPositionFixed){ 
+	  $el.css({'position': 'fixed', 'top': '0px'}); 
 	}
-});
+	if ($(this).scrollTop() < 200 && isPositionFixed){
+	  $el.css({'position': 'static', 'top': '0px'}); 
+	} 
+  });
