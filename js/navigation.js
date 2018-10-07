@@ -105,13 +105,15 @@
 	}( container ) );
 } )();
 
-$(window).scroll(function(e){ 
-	var $el = $('.sticky'); 
-	var isPositionFixed = ($el.css('position') == 'fixed');
-	if ($(this).scrollTop() > 200 && !isPositionFixed){ 
-	  $el.css({'position': 'fixed', 'top': '0px'}); 
-	}
-	if ($(this).scrollTop() < 200 && isPositionFixed){
-	  $el.css({'position': 'static', 'top': '0px'}); 
-	} 
-  });
+window.onscroll = function() {myFunction()};
+
+var logo = document.getElementsByClassName("site-branding");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    logo.classList.add("sticky")
+  } else {
+    logo.classList.remove("sticky");
+  }
+}
