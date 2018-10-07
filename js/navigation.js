@@ -105,7 +105,7 @@
 	}( container ) );
 } )();
 $(document).on("scroll", function(e) {
-	if ($(document).scrollTop() > 200) {
+	if ($(document).scrollTop() > 90) {
 		$('site-branding').addClass(".sticky");
 	} else {
 		$('site-branding').removeClass("sticky");
