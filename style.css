@@ -435,19 +435,6 @@ big {
 /*--------------------------------------------------------------
 ## Custom CSS
 --------------------------------------------------------------*/
-header.shrink {
-  position: fixed;
-  clear: both!important;
-  width: 100%;
-  height: 50px!important;
-  max-height: 50px!important;
-  min-height: 50px!important;
-  z-index: 999999999;
-  transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -webkit-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-}
 .site-branding {
   position: relative;
   height: 72px;
@@ -488,6 +475,22 @@ header.shrink {
 }
 .decorated > span:after {
   left: 100%;
+}
+@media only screen and (max-width:600px) {
+  .decorated > span {
+    position: relative;
+    display: inline-block;
+  }
+  .decorated > span:before,
+  .decorated > span:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    border-bottom: 5px solid;
+    width: 200px;
+    /* half of limiter*/
+    margin: 0 30px;
+  }
 }
 /* headline decoration with lines on each side of section title */
 .section-content-blackbg {
