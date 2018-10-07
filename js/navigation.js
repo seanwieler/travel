@@ -104,10 +104,3 @@
 		}
 	}( container ) );
 } )();
-$(document).on("scroll", function(e) {
-	if ($(document).scrollTop() > 200px) {
-		$('header').addClass(".small-site-header");
-	} else {
-		$('header').removeClass("small-site-header");
-	}
-});
