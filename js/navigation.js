@@ -104,9 +104,10 @@
 		}
 	}( container ) );
 } )();
+
 $(document).on("scroll", function(e) {
 	if ($(document).scrollTop() > 90) {
-		$('site-branding').addClass(".sticky");
+		$('site-branding').addClass("sticky");
 	} else {
 		$('site-branding').removeClass("sticky");
 	}
