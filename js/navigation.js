@@ -105,7 +105,7 @@
 	}( container ) );
 } )();
 $(document).on("scroll", function(e) {
-	if ($(document).scrollTop() > 200px) {
+	if ($(document).scrollTop() > 72px) {
 		$('site-branding').addClass(".small-site-header");
 	} else {
 		$('site-branding').removeClass(".small-site-header");
