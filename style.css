@@ -457,6 +457,7 @@ big {
   padding-top: 30px;
   font-size: 50px;
   font-family: 'roboto condensed', sans-serif;
+  text-transform: uppercase;
 }
 .decorated > span {
   position: relative;
@@ -484,7 +485,6 @@ big {
     text-align: center;
     padding-top: 30px;
     font-size: 25px;
-    text-transform: uppercase;
   }
   .decorated > span {
     position: relative;
