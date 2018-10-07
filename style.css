@@ -770,6 +770,8 @@ a:active {
   height: 72px;
   width: auto;
   margin: 10px 0 10px 0;
+  position: sticky;
+  top: 0px;
 }
 .custom-logo {
   height: 72px;
