@@ -776,6 +776,7 @@ a:active {
   width: auto;
 }
 .small-site-header {
+  display: block;
   position: absolute;
   height: 25px;
   width: auto;
