@@ -477,20 +477,29 @@ big {
 .decorated > span:after {
   left: 100%;
 }
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:670px) {
   .decorated {
     font-size: 25px;
   }
   .decorated > span {
-    width: 50px;
+    position: relative;
+    display: inline-block;
+  }
+  .decorated > span:before,
+  .decorated > span:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    border-bottom: 5px solid;
+    width: 10px;
     /* half of limiter*/
     margin: 0 30px;
   }
-  .decorated:before {
-    right: 10%;
+  .decorated > span:before {
+    right: 100%;
   }
-  .decorated:after {
-    left: 10%;
+  .decorated > span:after {
+    left: 100%;
   }
 }
 /* headline decoration with lines on each side of section title */
