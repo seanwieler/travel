@@ -23,11 +23,11 @@ get_header();
 		while ( have_posts() ) :
 			the_post();
 
-			$image = get_field('hero_image');
+			/*$image = get_field('hero_image');
 			$size = '50%'; // (thumbnail, medium, large, full or custom size)
 			if( $image ) {
 				echo wp_get_attachment_image( $image, $size );
-			}?>
+			}?>*/
 
 			<?php if(get_field('section_1_title')): ?>
 			<h2 class="decorated black-bg"><span><?php the_field('section_1_title');?></span></h2> 
