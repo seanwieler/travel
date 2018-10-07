@@ -478,18 +478,15 @@ big {
   left: 100%;
 }
 @media only screen and (max-width:600px) {
-  .decorated .decorated {
-    overflow: hidden;
-    text-align: center;
-    padding-top: 30px;
+  .decorated {
     font-size: 25px;
   }
-  .decorated .decorated > span {
+  .decorated > span {
     position: relative;
     display: inline-block;
   }
-  .decorated .decorated > span:before,
-  .decorated .decorated > span:after {
+  .decorated > span:before,
+  .decorated > span:after {
     content: '';
     position: absolute;
     top: 50%;
@@ -498,10 +495,10 @@ big {
     /* half of limiter*/
     margin: 0 30px;
   }
-  .decorated .decorated > span:before {
+  .decorated > span:before {
     right: 100%;
   }
-  .decorated .decorated > span:after {
+  .decorated > span:after {
     left: 100%;
   }
 }
