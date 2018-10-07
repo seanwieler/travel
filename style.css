@@ -773,7 +773,7 @@ a:active {
 .custom-logo {
   height: 72px;
   width: auto;
-  margin: 10px 0 0 10px;
+  margin: 10px 0 10px 0;
 }
 /* headlines with lines */
 .decorated {
