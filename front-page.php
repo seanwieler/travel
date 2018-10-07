@@ -29,7 +29,7 @@ get_header();
 				echo wp_get_attachment_image( $image, $size );
 			}?>*/
 
-			<?php if(get_field('section_1_title')): ?>
+			if(get_field('section_1_title')): ?>
 			<h2 class="decorated black-bg"><span><?php the_field('section_1_title');?></span></h2> 
 			<?php endif;?>
 
