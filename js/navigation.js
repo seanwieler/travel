@@ -104,3 +104,10 @@
 		}
 	}( container ) );
 } )();
+$(document).on("scroll", function(e) {
+	if ($(document).scrollTop() > 200px) {
+		$('site-branding').addClass(".sticky");
+	} else {
+		$('site-branding').removeClass("sticky");
+	}
+});
