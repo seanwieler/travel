@@ -42,7 +42,7 @@
 				?>
 				<p class="site-description"><?php echo $travel_description; /* WPCS: xss ok. */ ?></p>
 			<?php endif; ?>
-		
+			</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'travel' ); ?></button>
@@ -53,7 +53,7 @@
 			) );
 			?>
 		</nav><!-- #site-navigation -->
-		</div><!-- .site-branding -->
+		
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
