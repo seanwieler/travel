@@ -105,9 +105,9 @@
 	}( container ) );
 } )();
 $(document).on("scroll", function(e) {
-	if ($(document).scrollTop() > 72px) {
-		$('site-branding').addClass(".small-site-header");
+	if ($(document).scrollTop() > 200px) {
+		$('header').addClass(".small-site-header");
 	} else {
-		$('site-branding').removeClass(".small-site-header");
+		$('header').removeClass("small-site-header");
 	}
 });
