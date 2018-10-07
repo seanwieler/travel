@@ -477,20 +477,31 @@ big {
   left: 100%;
 }
 @media only screen and (max-width:600px) {
-  .decorated > span {
-    font-size: 18px;
+  .decorated .decorated {
+    overflow: hidden;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 20px;
+  }
+  .decorated .decorated > span {
     position: relative;
     display: inline-block;
   }
-  .decorated > span:before,
-  .decorated > span:after {
+  .decorated .decorated > span:before,
+  .decorated .decorated > span:after {
     content: '';
     position: absolute;
     top: 50%;
     border-bottom: 5px solid;
-    width: 200px;
+    width: 100px;
     /* half of limiter*/
     margin: 0 30px;
+  }
+  .decorated .decorated > span:before {
+    right: 100%;
+  }
+  .decorated .decorated > span:after {
+    left: 100%;
   }
 }
 /* headline decoration with lines on each side of section title */
