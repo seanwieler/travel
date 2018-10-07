@@ -441,20 +441,18 @@ big {
   width: auto;
 }
 .custom-logo {
-  /*height: 72px;
-	width: auto;
-	position: absolute; 
-	margin:0px auto; 
-	width: 100%;
-	text-align:center;*/
-}
-.custom-logo .center {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   width: 40%;
   height: 50%;
+  /*height: 72px;
+	width: auto;
+	position: absolute; 
+	margin:0px auto; 
+	width: 100%;
+	text-align:center;*/
 }
 /* headlines with lines */
 .decorated {
