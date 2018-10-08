@@ -40,6 +40,17 @@
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
+<script type="text/javascript">
+	jQuery(document).ready(function(){
+		jQuery(window).scroll(function() {
+			if (jQuery('body').height() <= (jQuery(window).height() + jQuery(window).scrollTop())) {
+				jQuery('#fixedbar').hide();
+			}else{
+				jQuery("#fixedbar").show();
+			}
+		});
+	});
+</script>
 
 <?php wp_footer(); ?>
 
