@@ -49,7 +49,7 @@ get_header();
                     <?php if(get_field('section_2_content')): ?>
                         <div class="section-content-whitebg"> <?php the_field('section_2_content'); ?> </div>
 					<?php endif;?>
-					<div id='map' style='width: 400px; height: 300px;'></div>
+					<div id='map' style='width: 600px; height: 400px;'></div>
 						<script>
   							mapboxgl.accessToken = 'pk.eyJ1Ijoic2VhbndpZWxlciIsImEiOiJjam16dnUwaDgxc252M3dydTEycGI2cTV0In0.XMvuCJ_JmM9jBu24qQByDg';
 							var map = new mapboxgl.Map({
