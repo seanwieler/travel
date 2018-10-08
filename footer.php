@@ -32,6 +32,6 @@
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
-<button class="button-top">↑</button>
+
 </body>
 </html>
