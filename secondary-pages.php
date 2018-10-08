@@ -49,7 +49,7 @@ get_header();
                     <?php if(get_field('section_2_content')): ?>
                         <div class="section-content-whitebg"> <?php the_field('section_2_content'); ?> </div>
 					<?php endif;
-					echo do_shortcode("[wpgmza id="1"]"); ?>
+					echo do_shortcode('[wpgmza id="1"]'); ?>
                 </div> 
         <?php endif; ?>
 			
