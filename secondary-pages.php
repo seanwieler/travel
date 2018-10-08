@@ -48,8 +48,7 @@ get_header();
                     <h2 class="decorated white-bg"><span><?php echo get_post_meta(get_the_ID(), "section_2_title", true);?></span></h2>
                     <?php if(get_field('section_2_content')): ?>
                         <div class="section-content-whitebg"> <?php the_field('section_2_content'); ?> </div>
-					<?php endif;
-					echo do_shortcode('[wpgmza id="1"]'); ?>
+					<?php endif; ?>
                 </div> 
         <?php endif; ?>
 			
