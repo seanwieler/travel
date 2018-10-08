@@ -26,5 +26,5 @@ $(window).scroll(function(){
       } else {
           $("#fixedbar").show();
       }
-      $("#fixedbar").css("opacity", op ); 
+      //$("#fixedbar").css("opacity", op ); 
   }); ( jQuery );
