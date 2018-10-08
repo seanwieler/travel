@@ -165,7 +165,6 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/inc/woocommerce.php';
 }
-
 /**
  * Load floating footbar file.
  */
@@ -173,34 +172,3 @@ function wpb_floating_bar() {
     wp_enqueue_script( 'wpb-footerbar', get_stylesheet_directory_uri() . '/js/floatingbar.js', array( 'jquery' ) );
 }
 add_action( 'wp_enqueue_scripts', 'wpb_floating_bar' );
-
-/*
-* Define a constant path to our single template folder
-*/
-define(SINGLE_PATH, TEMPLATEPATH . '/single');
- 
-/**
-* Filter the single_template with our custom function
-*/
-add_filter('single_template', 'my_single_template');
- 
-/**
-* Single template function which will choose our template
-*/
-function my_single_template($single) {
-global $wp_query, $post;
- 
-/**
-* Checks for single template by category
-* Check by category slug and ID
-*/
-foreach((array)get_the_category() as $cat) :
- 
-if(file_exists(SINGLE_PATH . '/single-cat-' . $cat->slug . '.php'))
-return SINGLE_PATH . '/single-cat-' . $cat->slug . '.php';
- 
-elseif(file_exists(SINGLE_PATH . '/single-cat-' . $cat->term_id . '.php'))
-return SINGLE_PATH . '/single-cat-' . $cat->term_id . '.php';
- 
-endforeach;
-}
