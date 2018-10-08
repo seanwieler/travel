@@ -30,10 +30,10 @@
           //when rich top of boxex than fire
           if(docScroll >= boxCntOfset ) {
       
-            $("#first").fadeIn(200)
+            $("#fixedbar").fadeOut(200)
           
           } else {
-           $("#first").fadeOut(200)
+           $("#fixedbar").fadeIn(200)
           
           }
         })   
