@@ -165,4 +165,10 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/inc/woocommerce.php';
 }
-
+/**
+ * Load floating footbar file.
+ */
+function wpb_floating_bar() {
+    wp_enqueue_script( 'wpb-footerbar', get_stylesheet_directory_uri() . '/js/floatingbar.js', array( 'jquery' ) );
+}
+add_action( 'wp_enqueue_scripts', 'wpb_floating_bar' );
