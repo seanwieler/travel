@@ -17,12 +17,23 @@
     });
     })( jQuery );
 
-    jQuery(document).ready(function(){
-		jQuery(window).scroll(function() {
-			if (jQuery('body').height() <= (jQuery(window).height() + jQuery(window).scrollTop())) {
-				jQuery('#fixedbar').hide();
-			}else{
-				jQuery('#fixedbar').show();
-			}
-		});
-	})( jQuery );
+    $(document).ready(function() {
+         
+        //init scrolling event handler
+        $(document).scroll(function(){
+         
+          var docScroll = $(document).scrollTop(), 
+              boxCntOfset = $("#fixedbar").offset().top - 100;
+          
+       
+          //when rich top of boxex than fire
+          if(docScroll >= boxCntOfset ) {
+      
+            $("#first").fadeIn(200)
+          
+          } else {
+           $("#first").fadeOut(200)
+          
+          }
+        })   
+      })( jQuery );
