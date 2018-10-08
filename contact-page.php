@@ -37,7 +37,7 @@ get_header();
 			    <div class="section-content-blackbg .aligncenter"> <?php echo get_post_meta(get_the_ID(), "section_1_content", true); ?> </div> 
 			<?php endif; ?>
 			
-            <div class="white-background">
+            <div class="white-background aligncenter">
             <?php echo do_shortcode('[contact-form-7 id="304" title="Contact form 1"]'); ?>
             </div>  <?php
 
