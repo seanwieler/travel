@@ -48,8 +48,8 @@ get_header();
                     <h2 class="decorated white-bg"><span><?php echo get_post_meta(get_the_ID(), "section_2_title", true);?></span></h2>
                     <?php if(get_field('section_2_content')): ?>
                         <div class="section-content-whitebg"> <?php the_field('section_2_content'); ?> </div>
-					<?php endif;
-					echo do_shortcode('[do_widget id=gmwd_widget-2]'); ?>
+					<?php endif;?>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10585.543283908559!2d-123.5460096!3d48.4491264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sca!4v1538974560271" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div> 
         <?php endif; ?>
 			
