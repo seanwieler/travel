@@ -49,8 +49,13 @@ get_header();
                     <?php if(get_field('section_2_content')): ?>
                         <div class="section-content-whitebg"> <?php the_field('section_2_content'); ?> </div>
 					<?php endif;?>
-					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10585.543283908559!2d-123.5460096!3d48.4491264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sca!4v1538974560271" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-                </div> 
+					<h3>My Google Maps Demo</h3>
+						<!--The div element for the map -->
+						<div id="map"></div>
+						<!-- Replace the value of the key parameter with your own API key. -->
+							<script async defer
+								src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzu0OsBXr0OJcixPkv_G2Iom0NHSvuaco&callback=initMap">
+							</script>
         <?php endif; ?>
 			
 			<?php if(get_field('section_3_title')): ?>
