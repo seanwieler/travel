@@ -25,4 +25,4 @@
 				jQuery(".fixedbar").show();
 			}
 		});
-	});
+	})( jQuery );
