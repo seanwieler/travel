@@ -31,8 +31,6 @@
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
-<?php wp_footer(); ?>
-
 <div class="fixedbar">
 	<div class="boxfloat">
 		<ul id="tips">
@@ -41,6 +39,9 @@
 		</ul>
 	</div>
 </div>
+<?php wp_footer(); ?>
+
+
 
 </body>
 </html>
