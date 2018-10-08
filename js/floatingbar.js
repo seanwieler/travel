@@ -17,6 +17,7 @@
     });
     })( jQuery );
 
+(function($) {
     $(document).ready(function() {
          
         //init scrolling event handler
@@ -36,4 +37,5 @@
           
           }
         })   
-      })( jQuery );
+      })
+    }) ( jQuery );
