@@ -1111,7 +1111,7 @@ header .site-branding .site-description {
 /*WPBeginner Footer Bar*/
 .fixedbar {
   background: #000;
-  bottom: 0px;
+  bottom: 20px;
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
   left: 0;
