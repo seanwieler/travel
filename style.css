@@ -1109,7 +1109,7 @@ header .site-branding .site-description {
   color: #ffffff;
 }
 /*WPBeginner Footer Bar*/
-.fixedbar {
+#fixedbar {
   background: #000;
   bottom: 0px;
   color: #fff;

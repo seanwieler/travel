@@ -16,7 +16,7 @@
 <footer id="colophon" class="site-footer">
 	<?php if( function_exists('slbd_display_widgets') ) { echo slbd_display_widgets(); } ?>
 
-	<div class="fixedbar">
+	<div ID="fixedbar">
 		<div class="boxfloat">
 			<ul id="tips">
 				<li><a href="https://www.wpbeginner.com/">WPBeginner Link is the First Item</a></li>
