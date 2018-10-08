@@ -49,13 +49,15 @@ get_header();
                     <?php if(get_field('section_2_content')): ?>
                         <div class="section-content-whitebg"> <?php the_field('section_2_content'); ?> </div>
 					<?php endif;?>
-					<h3>My Google Maps Demo</h3>
-						<!--The div element for the map -->
-						<div id="map"></div>
-						<!-- Replace the value of the key parameter with your own API key. -->
-							<script async defer
-								src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzu0OsBXr0OJcixPkv_G2Iom0NHSvuaco&callback=initMap">
-							</script>
+					<div id='map' style='width: 400px; height: 300px;'></div>
+						<script>
+  							mapboxgl.accessToken = 'pk.eyJ1Ijoic2VhbndpZWxlciIsImEiOiJjam16dnUwaDgxc252M3dydTEycGI2cTV0In0.XMvuCJ_JmM9jBu24qQByDg';
+							var map = new mapboxgl.Map({
+								container: 'map',
+    							style: 'mapbox://styles/mapbox/streets-v10'
+  							});
+						</script>
+
         <?php endif; ?>
 			
 			<?php if(get_field('section_3_title')): ?>
