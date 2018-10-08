@@ -34,7 +34,7 @@ get_header();
 			<?php endif;?>
 
 			<?php if(get_field('section_1_content')): ?>
-			    <div class="section-content-blackbg"> <?php echo get_post_meta(get_the_ID(), "section_1_content", true); ?> </div> 
+			    <div class="section-content-blackbg .aligncenter"> <?php echo get_post_meta(get_the_ID(), "section_1_content", true); ?> </div> 
 			<?php endif; ?>
 			
             <div class="white-background">
