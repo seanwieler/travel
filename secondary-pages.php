@@ -49,7 +49,7 @@ get_header();
                     <?php if(get_field('section_2_content')): ?>
                         <div class="section-content-whitebg"> <?php the_field('section_2_content'); ?> </div>
 					<?php endif;
-					echo do_shortcode('[do_widget id=googlemapswidget-2]'); ?>
+					echo do_shortcode('[do_widget id=gmwd_widget-2]'); ?>
                 </div> 
         <?php endif; ?>
 			
