@@ -34,10 +34,10 @@ get_header();
 			<?php endif;?>
 
 			<?php if(get_field('section_1_content')): ?>
-			    <div class="section-content-blackbg .aligncenter"> <?php echo get_post_meta(get_the_ID(), "section_1_content", true); ?> </div> 
+			    <div class="section-content-blackbg"> <?php echo get_post_meta(get_the_ID(), "section_1_content", true); ?> </div> 
 			<?php endif; ?>
 			
-            <div class="white-background aligncenter">
+            <div class="white-background">
             <?php echo do_shortcode('[contact-form-7 id="304" title="Contact form 1"]'); ?>
             </div>  <?php
 
