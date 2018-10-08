@@ -44,10 +44,10 @@
 <script type="text/javascript">
 	jQuery(document).ready(function(){
 		jQuery(window).scroll(function() {
-			if (jQuery('body').height() <= (jQuery(window).height() + jQuery(window).scrollTop())) {
-				jQuery('#fixedbar').hide();
+			if (jQuery('body').height() <= ((jQuery(window).height() + jQuery(window).scrollTop())-300)) {
+				jQuery('#fixedbar').fadeOut("slow");
 			}else{
-				jQuery("#fixedbar").show();
+				jQuery("#fixedbar").fadeIn("slow");
 			}
 		});
 	});
