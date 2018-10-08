@@ -11,18 +11,20 @@
 
 ?>
 
-	</div><!-- #content -->
+</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer">
+<footer id="colophon" class="site-footer">
 	<?php if( function_exists('slbd_display_widgets') ) { echo slbd_display_widgets(); } ?>
+
 	<div class="fixedbar">
-	<div class="boxfloat">
-		<ul id="tips">
-			<li><a href="https://www.wpbeginner.com/">WPBeginner Link is the First Item</a></li>
-			<li><a href="http://www.wordpress.org/">WordPress.org is the Second Item</a></li>
-		</ul>
+		<div class="boxfloat">
+			<ul id="tips">
+				<li><a href="https://www.wpbeginner.com/">WPBeginner Link is the First Item</a></li>
+				<li><a href="http://www.wordpress.org/">WordPress.org is the Second Item</a></li>
+			</ul>
+		</div>
 	</div>
-</div>
+
 	<div class="site-info foot-text-color">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'Travel' ) ); ?>">
 				<?php
@@ -39,10 +41,7 @@
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
-
 <?php wp_footer(); ?>
-
-
 
 </body>
 </html>
