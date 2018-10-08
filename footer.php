@@ -31,8 +31,6 @@
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
-<a href="#top" id="smoothup" title="Back to top"></a>
-
 <?php wp_footer(); ?>
 
 </body>
