@@ -19,8 +19,8 @@
 	<div id="fixedbar">
 		<div class="boxfloat">
 			<ul id="tips">
-				<li><a><?php echo do_shortcode('[do_widget id=recent-posts-2]')?></a></li>
-				<li><a href="http://www.wordpress.org/">WordPress.org is the Second Item</a></li>
+				<li><a href="https://www.zeroanalog.ca/testsite/stories/">Read the latest travel story...</a></li>
+				<li><a href="https://www.zeroanalog.ca/testsite/starthere/">Find out why I started traveling...</a></li>
 			</ul>
 		</div>
 	</div>
