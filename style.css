@@ -526,17 +526,14 @@ big {
 .black-bg {
   color: #ffffff;
 }
-.black-bg > a {
-  text-decoration: none;
-  font-family: "roboto condensed", sans-serif;
-  font-size: 20px;
-}
-.black-bg > a a:hover {
-  color: #ff0000;
-  cursor: pointer;
-}
 .white-bg {
   color: #000000;
+}
+.call-to-action {
+  font-family: 'roboto condensed', sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 .rp-background {
   background-image: url("./img/travel-blog-bg.png");
