@@ -20,7 +20,7 @@
 		<div class="boxfloat">
 			<ul id="tips">
 				<li><a href="https://www.zeroanalog.ca/testsite/stories/">Read the latest travel story...</a></li>
-				<li><a href="https://www.zeroanalog.ca/testsite/starthere/">Find out why I started traveling...</a></li>
+				<li><a href="https://www.zeroanalog.ca/testsite/start-here/">Find out why I started traveling...</a></li>
 			</ul>
 		</div>
 	</div>
