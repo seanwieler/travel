@@ -526,13 +526,13 @@ big {
 .black-bg {
   color: #ffffff;
 }
-.black-bg a {
+.black-bg > a {
   text-decoration: none;
   font-family: "roboto condensed", sans-serif;
   font-size: 20px;
 }
-.black-bg a:hover {
-  color: #0000ff;
+.black-bg > a a:hover {
+  color: #ff0000;
   cursor: pointer;
 }
 .white-bg {
