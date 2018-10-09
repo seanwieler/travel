@@ -533,6 +533,7 @@ big {
 }
 .black-bg a:hover {
   color: #0000ff;
+  cursor: pointer;
 }
 .white-bg {
   color: #000000;
