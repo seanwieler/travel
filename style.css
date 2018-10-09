@@ -1193,3 +1193,7 @@ header .site-branding .site-description {
 .rpw-home aside#recent-posts-widget-with-thumbnails-3 {
   position: static;
 }
+.rpw-home aside#recent-posts-widget-with-thumbnails-3 > ul > li {
+  display: inline-block;
+  width: 33%;
+}
