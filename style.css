@@ -1190,3 +1190,6 @@ header .site-branding .site-description {
 .widget select {
   max-width: 100%;
 }
+.rpw-home aside {
+  position: static;
+}

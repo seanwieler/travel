@@ -40,7 +40,7 @@ get_header();
 			<?php if(get_field('recent_posts_title')): ?>
 			<div class="rp-background">
 				<div class="decorated white-bg"><span><?php echo get_post_meta(get_the_ID(), "recent_posts_title", true);?></span></div>
-				<div><?php echo do_shortcode('[do_widget id=recent-posts-widget-with-thumbnails-3]'); ?></div>
+				<div class="rpw-home"><?php echo do_shortcode('[do_widget id=recent-posts-widget-with-thumbnails-3]'); ?></div>
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
 			</div> 
 			<?php endif;
