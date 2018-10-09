@@ -1190,6 +1190,6 @@ header .site-branding .site-description {
 .widget select {
   max-width: 100%;
 }
-.rpw-home aside {
+.rpw-home aside#recent-posts-widget-with-thumbnails-3 {
   position: static;
 }
