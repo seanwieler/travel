@@ -667,24 +667,27 @@ table {
 ## Links
 --------------------------------------------------------------*/
 a {
-	color: royalblue;
+	color: #ffffff;
+	text-decoration: none;
+	&:visited {
+		color: inherit;
+	}
+	&:hover, &:focus, &:active {
+		color: midnightblue;
+	}
+	&:focus {
+		outline: thin dotted;
+	}
+	&:hover, &:active {
+		outline: 0;
+	}
+	body.blog h2 & {
+		
+	}
 }
 
-a:visited {
-	color: purple;
-}
 
-a:hover, a:focus, a:active {
-	color: midnightblue;
-}
 
-a:focus {
-	outline: thin dotted;
-}
-
-a:hover, a:active {
-	outline: 0;
-}
 
 /*--------------------------------------------------------------
 ## Menus

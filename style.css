@@ -641,10 +641,11 @@ table {
 ## Links
 --------------------------------------------------------------*/
 a {
-  color: royalblue;
+  color: #ffffff;
+  text-decoration: none;
 }
 a:visited {
-  color: purple;
+  color: inherit;
 }
 a:hover,
 a:focus,
