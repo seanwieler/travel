@@ -534,6 +534,8 @@ big {
   /* The image used */
   background-color: #cccccc;
   /* Used if the image is unavailable */
+  height: auto;
+  /* You must set a specified height */
   background-position: center;
   /* Center the image */
   background-repeat: no-repeat;
