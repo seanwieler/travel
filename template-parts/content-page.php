@@ -16,7 +16,7 @@
 	</header><!-- .entry-header -->
 <?php endif; ?>
 
-	<?php echo travel_post_thumbnail(); ?>
+	<?php travel_post_thumbnail(); ?>
 
 	<div class="entry-content">
 		<?php
