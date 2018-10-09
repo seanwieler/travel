@@ -568,7 +568,7 @@ big {
   padding: 30px 0 50px 0;
 }
 .widget {
-  margin: 20px 20% 20px 20%;
+  margin: 20px 20% 20px 20% !important;
 }
 /*--------------------------------------------------------------
 # Elements
