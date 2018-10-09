@@ -643,9 +643,9 @@ table {
 a {
   color: #ffffff;
   text-decoration: none;
-}
-a:visited {
-  color: inherit;
+  /*&:visited {
+		color: inherit;
+	}*/
 }
 a:hover,
 a:focus,
