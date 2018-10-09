@@ -529,11 +529,8 @@ big {
 .white-bg {
   color: #000000;
 }
-.call-to-action {
-  font-family: 'roboto condensed', sans-serif;
-  font-size: 20px;
-  text-decoration: none;
-  text-transform: uppercase;
+.new-line {
+  display: block;
 }
 .rp-background {
   background-image: url("./img/travel-blog-bg.png");
