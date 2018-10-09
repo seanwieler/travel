@@ -41,8 +41,9 @@ get_header();
 			<div class="rp-background">
 				<div class="decorated white-bg"><span><?php echo get_post_meta(get_the_ID(), "recent_posts_title", true);?></span></div>
 				<div><?php echo do_shortcode('[do_widget id=recent-posts-widget-with-thumbnails-3]'); ?></div>
-				<div class="call-to-action white-bg"><a>MORE >></a></div> <?php
-				// get_template_part( 'template-parts/content', 'page' ); ?>
+				<div><?php echo do_shortcode('[su_button url="http://zeroanalog.ca/testsite/stories/" target="self" style="default" background="#2D89EF" 
+				color="#FFFFFF" size="3" wide="no" center="no" radius="auto" icon="" icon_color="#FFFFFF" text_shadow="none" desc="" onclick="" rel="" title="" id="" class=""]Button text[/su_button]');?>
+				<?php // get_template_part( 'template-parts/content', 'page' ); ?>
 			</div> 
 			<?php endif;
 
