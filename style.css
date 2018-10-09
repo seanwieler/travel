@@ -1197,3 +1197,7 @@ header .site-branding .site-description {
   display: inline-block;
   width: 33%;
 }
+.rpw-home aside#recent-posts-widget-with-thumbnails-3 > * > ul > li img {
+  width: 100%;
+  height: auto;
+}
