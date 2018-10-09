@@ -1104,7 +1104,7 @@ body.blog {
 .single-post {
   color: #fff;
 }
-.article.type-post {
+article.type-post {
   margin: 0 20% 0 20%;
 }
 /* -------------------------------------------------------------
