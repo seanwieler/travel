@@ -875,11 +875,14 @@ aside#recent-posts-widget-with-thumbnails-3 {
     margin: 20px 0 20px 0;
 }
 
-.mobile-hero {
-	@media @desktop {
+@media @desktop {
+	.mobile-hero {
 		display: none;
 	}
-	@media @phone {
+}
+
+@media @phone {
+	.mobile-hero{
 		display: block;
 	}
 }
