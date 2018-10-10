@@ -37,7 +37,7 @@ get_header();
 			<div class="section-content-blackbg"> <?php echo get_post_meta(get_the_ID(), "section_1_content", true); ?> </div> 
 			<?php endif;
 			
-			<?php if(get_field('recent_posts_title')): ?>
+			if(get_field('recent_posts_title')): ?>
 			<div class="rp-background">
 				<div class="decorated white-bg"><span><?php echo get_post_meta(get_the_ID(), "recent_posts_title", true);?></span></div>
 				<div class="rpw-home"><?php echo do_shortcode('[do_widget id=recent-posts-widget-with-thumbnails-3]'); ?></div>
