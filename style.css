@@ -1109,6 +1109,11 @@ header .site-branding .site-description {
 #tips li a:hover {
   text-decoration: none;
 }
+@media only screen and (max-width:670px) {
+  footer {
+    display: none;
+  }
+}
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
