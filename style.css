@@ -1157,6 +1157,9 @@ h6.widget-title {
 .footer-mega-col-wrap {
   margin-top: 30px;
 }
+.adamrob_parallax_posttitle {
+  display: none;
+}
 iframe.map {
   margin-left: 15%;
   margin-right: auto;
