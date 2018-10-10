@@ -804,14 +804,14 @@ a {
 	@media @phone {
 		width: calc(100% - 100px);
 	}
-	& a {
-		font-size: 2em;
-	}
 }
 
 .section-content-blackbg {
 	.section-content-with-bg();
 	color:	#ffffff;
+	> a {
+		font-size: 2em;
+	}
 }
 
 .section-content-whitebg {
