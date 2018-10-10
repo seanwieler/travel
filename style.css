@@ -1187,8 +1187,7 @@ iframe.map {
 @media only screen and (max-width:670px) {
   iframe.map {
     height: 400px;
-    width: 50%;
-    left: 2%;
-    right: 2%;
+    left: 10%;
+    right: auto;
   }
 }
