@@ -1130,3 +1130,8 @@ header .site-branding .site-description {
   width: 100%;
   height: auto;
 }
+h6.widget-title {
+  color: #ffffff;
+  font-size: 20px;
+  margin-top: 0px;
+}
