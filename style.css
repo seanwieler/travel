@@ -1191,3 +1191,9 @@ iframe.map {
     right: auto;
   }
 }
+@media only screen and (min-width:671px and max-width:980px) {
+  iframe.map {
+    height: 600px;
+    width: 100%;
+  }
+}
