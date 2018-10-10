@@ -95,18 +95,15 @@ get_header();
 			<div class="section-content-blackbg"> <?php echo get_post_meta(get_the_ID(), "contact_content", true); ?> </div> 
 			<?php endif;
 
-			$value = get_post_meta( $post->ID, 'link_to_page', true );
+			<?php 
 
-			if ( $value ) {
-				// Returns an empty string for invalid URLs
-				$url = esc_url( 'http://' . $value );
+			$link = get_field('link_to_page');
 
-				if ( '' !== $url ) {
-					$display = esc_html( $value );
+			if( $link ): ?>
+				
+				<a class="section-content-blackbg" href="<?php echo $link; ?>">Continue Reading</a>
 
-					print "<a href='$url' target='_blank'>$display</a>";
-				}
-			}
+			<?php endif; ?>
 
 			// If comments are open or we have at least one comment, load up the comment template.
 			if ( comments_open() || get_comments_number() ) :
