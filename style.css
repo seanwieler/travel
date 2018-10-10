@@ -764,12 +764,22 @@ a:active {
   padding-bottom: 30px;
   color: #ffffff;
 }
+@media only screen and (max-width:670px) {
+  .section-content-blackbg {
+    width: calc(100% - 20px);
+  }
+}
 .section-content-whitebg {
   width: calc(100% - 800px);
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 30px;
   color: #000000;
+}
+@media only screen and (max-width:670px) {
+  .section-content-whitebg {
+    width: calc(100% - 20px);
+  }
 }
 .black-bg {
   color: #ffffff;
