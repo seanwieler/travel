@@ -843,6 +843,16 @@ aside#recent-posts-widget-with-thumbnails-3 {
   width: 100%;
   margin: 20px 0 20px 0;
 }
+@media only screen and (min-width:981px) {
+  .mobile-hero {
+    display: none;
+  }
+}
+@media only screen and (max-width:670px) {
+  .mobile-hero {
+    display: block;
+  }
+}
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
