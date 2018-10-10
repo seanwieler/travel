@@ -38,7 +38,7 @@ get_header();
 			<?php endif;
 
 			$image = get_field('section_1_close_image');
-			$size = '50%'; // (thumbnail, medium, large, full or custom size)
+			$size = 'full'; // (thumbnail, medium, large, full or custom size)
 			if( $image ) {
 				echo wp_get_attachment_image( $image, $size );
 			}?>
