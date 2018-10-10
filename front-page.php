@@ -95,9 +95,18 @@ get_header();
 			<div class="section-content-blackbg"> <?php echo get_post_meta(get_the_ID(), "contact_content", true); ?> </div> 
 			<?php endif;
 
-			if(get_field('link_to_page')): ?>
-			<div class="section-content-blackbg"><a><?php echo get_post_meta(get_the_ID(), "link_to_page", true); ?>MORE >></a></div> 
-			<?php endif;
+			$value = get_post_meta( $post->ID, 'link_to_page', true );
+
+			if ( $value ) {
+				// Returns an empty string for invalid URLs
+				$url = esc_url( 'http://' . $value );
+
+				if ( '' !== $url ) {
+					$display = esc_html( $value );
+
+					print "<a href='$url' target='_blank'>$display</a>";
+				}
+			}
 
 			// If comments are open or we have at least one comment, load up the comment template.
 			if ( comments_open() || get_comments_number() ) :
