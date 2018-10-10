@@ -510,6 +510,7 @@ big {
 }
 /* headline decoration with lines on each side of section title */
 .section-content-blackbg {
+  /*padding-bottom: 30px;*/
   width: 60%;
   margin-left: auto;
   margin-right: auto;
@@ -517,6 +518,7 @@ big {
   color: #ffffff;
 }
 .section-content-whitebg {
+  /*padding-bottom: 30px;*/
   width: 60%;
   margin-left: auto;
   margin-right: auto;
@@ -867,6 +869,7 @@ a:active {
 }
 /* headline decoration with lines on each side of section title */
 .section-content-blackbg {
+  /*padding-bottom: 30px;*/
   width: 60%;
   margin-left: auto;
   margin-right: auto;
@@ -874,6 +877,7 @@ a:active {
   color: #ffffff;
 }
 .section-content-whitebg {
+  /*padding-bottom: 30px;*/
   width: 60%;
   margin-left: auto;
   margin-right: auto;
