@@ -1154,6 +1154,9 @@ h6.widget-title {
 .norm_row.sfsi_wDiv {
   margin-left: 16%;
 }
+.footer-mega-col-wrap {
+  margin-top: 30px;
+}
 iframe.map {
   margin-left: 15%;
   margin-right: auto;
