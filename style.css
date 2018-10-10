@@ -1163,6 +1163,12 @@ h6.widget-title {
 .adamrob_parallax_posttitle {
   display: none;
 }
+a.section-content-blackbg {
+  font-size: 2em;
+  /* text-align: right; */
+  padding-left: 50%;
+  font-weight: 700;
+}
 iframe.map {
   margin-left: 15%;
   margin-right: auto;
