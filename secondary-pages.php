@@ -49,7 +49,7 @@ get_header();
                     <?php if(get_field('section_2_content')): ?>
                         <div class="section-content-whitebg"> <?php the_field('section_2_content'); ?> </div>
 					<?php endif;?>
-					<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1-IHhIMuHL3jRGDUdr7QqSHjTMf36kvtE" width="1280" height="960"></iframe>
+					<iframe class="map" src="https://www.google.com/maps/d/u/0/embed?mid=1-IHhIMuHL3jRGDUdr7QqSHjTMf36kvtE" width="640" height="480"></iframe>
 					<!--<div id='map'></div>
 						<script>
   							mapboxgl.accessToken = 'pk.eyJ1Ijoic2VhbndpZWxlciIsImEiOiJjam16dnUwaDgxc252M3dydTEycGI2cTV0In0.XMvuCJ_JmM9jBu24qQByDg';
