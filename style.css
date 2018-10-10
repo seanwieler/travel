@@ -745,7 +745,7 @@ a:active {
     position: absolute;
     top: 50%;
     border-bottom: 5px solid;
-    width: 10px;
+    width: 50px;
     /* half of limiter*/
     margin: 0 30px;
   }
