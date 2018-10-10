@@ -769,6 +769,11 @@ a:active {
     width: calc(100% - 100px);
   }
 }
+@media only screen and (min-width:671px and max-width:980px) {
+  .section-content-blackbg {
+    width: calc(100% - 100px);
+  }
+}
 .section-content-blackbg > a {
   font-size: 2em;
 }
@@ -780,6 +785,11 @@ a:active {
   color: #000000;
 }
 @media only screen and (max-width:670px) {
+  .section-content-whitebg {
+    width: calc(100% - 100px);
+  }
+}
+@media only screen and (min-width:671px and max-width:980px) {
   .section-content-whitebg {
     width: calc(100% - 100px);
   }
