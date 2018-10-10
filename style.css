@@ -1110,7 +1110,7 @@ header .site-branding .site-description {
   text-decoration: none;
 }
 @media only screen and (max-width:670px) {
-  footer {
+  .footer-mega-col-wrap {
     display: none;
   }
 }
