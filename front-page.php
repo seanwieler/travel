@@ -96,7 +96,7 @@ get_header();
 			<?php endif;
 
 			if(get_field('link_to_page')): ?>
-			<div class="section-content-blackbg"><a><?php echo get_post_meta(get_the_ID(), "link_to_page", true); ?> </a></div> 
+			<div class="section-content-blackbg"><a><?php echo get_post_meta(get_the_ID(), "link_to_page", true); ?>MORE >></a></div> 
 			<?php endif;
 
 			// If comments are open or we have at least one comment, load up the comment template.
