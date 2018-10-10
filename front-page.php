@@ -22,10 +22,9 @@ get_header();
 		<?php
 		while ( have_posts() ) :
 			the_post();
-
-			if(is_front_page()) {?>
-				<div class="desktop-hero"><?php echo do_shortcode('[parallax-scroll id="115"]');?></div><?php
-			}
+			?>
+			<div class="desktop-hero"><?php echo do_shortcode('[parallax-scroll id="115"]');?></div>
+			<?php
 
 			$image = get_field('hero_image');
 			$size = '50%'; // (thumbnail, medium, large, full or custom size)
