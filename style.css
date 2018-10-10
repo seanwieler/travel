@@ -758,9 +758,7 @@ a:active {
 }
 /* headline decoration with lines on each side of section title */
 @media only screen and (min-width:671px and max-width:980px) {
-  .section-content-blackbg {
-    width: 100%;
-  }
+  width: 100%;
 }
 .section-content-blackbg {
   width: calc(100% - 800px);
@@ -772,6 +770,11 @@ a:active {
 @media only screen and (max-width:670px) {
   .section-content-blackbg {
     width: calc(100% - 100px);
+  }
+}
+@media only screen and (min-width:671px and max-width:980px) {
+  .section-content-blackbg {
+    width: calc(100% - 50px);
   }
 }
 .section-content-blackbg > a {
@@ -787,6 +790,11 @@ a:active {
 @media only screen and (max-width:670px) {
   .section-content-whitebg {
     width: calc(100% - 100px);
+  }
+}
+@media only screen and (min-width:671px and max-width:980px) {
+  .section-content-whitebg {
+    width: calc(100% - 50px);
   }
 }
 .black-bg {
