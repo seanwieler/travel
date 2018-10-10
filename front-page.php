@@ -24,7 +24,7 @@ get_header();
 			the_post();
 
 			if(is_front_page()) {?>
-				<div class="header-rotate"><?php echo do_shortcode('[parallax-scroll id="115"]');?></div><?php
+				<div class="desktop-hero"><?php echo do_shortcode('[parallax-scroll id="115"]');?></div><?php
 			}
 
 			$image = get_field('hero_image');

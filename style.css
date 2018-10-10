@@ -847,10 +847,16 @@ aside#recent-posts-widget-with-thumbnails-3 {
   .mobile-hero {
     display: none;
   }
+  .desktop-hero {
+    display: block;
+  }
 }
 @media only screen and (max-width:670px) {
   .mobile-hero {
     display: block;
+  }
+  .desktop-hero {
+    display: none;
   }
 }
 /*--------------------------------------------------------------
