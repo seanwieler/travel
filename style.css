@@ -1188,8 +1188,9 @@ a.section-content-blackbg {
   font-weight: 700;
 }
 iframe.map {
-  margin-left: 15%;
-  margin-right: auto;
-  width: 1280px;
   height: 600px;
+  width: 60%;
+  position: relative;
+  left: 20%;
+  right: 20%;
 }
