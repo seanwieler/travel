@@ -95,13 +95,12 @@ get_header();
 			<div class="section-content-blackbg"> <?php echo get_post_meta(get_the_ID(), "contact_content", true); ?> </div> 
 			<?php endif;
 
-			$link = get_field('link_to_page');
-
-			if( $link ): ?>
-				
-				<a class="section-content-blackbg" href="<?php echo $link; ?>">Continue Reading</a>
-
-			<?php endif;
+			if(get_field('link_to_page')):
+				$link = get_field('link_to_page');
+				if( $link ): ?>
+					<a class="section-content-blackbg" href="<?php echo $link; ?>">MORE >></a>
+				<?php endif;
+			endif;
 
 			// If comments are open or we have at least one comment, load up the comment template.
 			if ( comments_open() || get_comments_number() ) :
