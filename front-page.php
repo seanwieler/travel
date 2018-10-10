@@ -36,13 +36,6 @@ get_header();
 			<?php if(get_field('section_1_content')): ?>
 			<div class="section-content-blackbg"> <?php echo get_post_meta(get_the_ID(), "section_1_content", true); ?> </div> 
 			<?php endif;
-
-			
-			$image = get_field('section_1_close_image');
-			$size = 'full'; // (thumbnail, medium, large, full or custom size)
-			if( $image ) {
-				?><div><?php echo wp_get_attachment_image( $image, $size );?></div><?php
-			}?>
 			
 			<?php if(get_field('recent_posts_title')): ?>
 			<div class="rp-background">
