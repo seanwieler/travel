@@ -771,7 +771,7 @@ a:active {
 }
 @media only screen and (min-width:671px and max-width:980px) {
   .section-content-blackbg {
-    width: calc(100% - 100px);
+    width: calc(100% - 50px);
   }
 }
 .section-content-blackbg > a {
@@ -791,7 +791,7 @@ a:active {
 }
 @media only screen and (min-width:671px and max-width:980px) {
   .section-content-whitebg {
-    width: calc(100% - 100px);
+    width: calc(100% - 50px);
   }
 }
 .black-bg {
