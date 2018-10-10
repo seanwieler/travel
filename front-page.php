@@ -95,8 +95,6 @@ get_header();
 			<div class="section-content-blackbg"> <?php echo get_post_meta(get_the_ID(), "contact_content", true); ?> </div> 
 			<?php endif;
 
-			<?php 
-
 			$link = get_field('link_to_page');
 
 			if( $link ): ?>
