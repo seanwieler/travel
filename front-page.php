@@ -49,6 +49,10 @@ get_header();
 			</div> 
 			<?php endif;
 
+			if(is_front_page()) {
+				echo do_shortcode('[parallax-scroll id="384"]');
+			}
+			
 			$image2 = get_field('section_2_image');
 			$size2 = '50%'; // (thumbnail, medium, large, full or custom size)
 			if( $image2 ) {
