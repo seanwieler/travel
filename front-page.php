@@ -49,14 +49,14 @@ get_header();
 			</div> 
 			<?php endif;
 
-			if(is_front_page()) {
-				echo do_shortcode('[parallax-scroll id="384"]');
+			if(is_front_page()) {?>
+			<div class="desktop-hero"><?php echo do_shortcode('[parallax-scroll id="384"]');?></div><?php
 			}
 
 			$image2 = get_field('section_2_image');
 			$size2 = '50%'; // (thumbnail, medium, large, full or custom size)
-			if( $image2 ) {
-				echo wp_get_attachment_image( $image2, $size2 );
+			if( $image2 ) {?>
+				<div class="mobile-hero"><?php echo wp_get_attachment_image( $image, $size );?></div><?php
 			} ?>
 
 			<?php if(get_field('section_2_title')): ?>
@@ -81,8 +81,8 @@ get_header();
 			</div> 
 			<?php endif;
 
-			if(is_front_page()) {
-				echo do_shortcode('[parallax-scroll id="386"]');
+			if(is_front_page()) { ?>
+				<div class="desktop-hero"><?php echo do_shortcode('[parallax-scroll id="386"]');?></div><?php
 			}
 			
 			$image3 = get_field('contact_image');
