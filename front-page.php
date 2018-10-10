@@ -23,8 +23,8 @@ get_header();
 		while ( have_posts() ) :
 			the_post();
 
-			if(is_front_page()) {
-				echo do_shortcode('[parallax-scroll id="115"]');
+			if(is_front_page()) {?>
+				<div class="header-rotate"><?php echo do_shortcode('[parallax-scroll id="115"]');?></div><?php
 			}
 
 			$image = get_field('hero_image');
@@ -52,7 +52,7 @@ get_header();
 			if(is_front_page()) {
 				echo do_shortcode('[parallax-scroll id="384"]');
 			}
-			
+
 			$image2 = get_field('section_2_image');
 			$size2 = '50%'; // (thumbnail, medium, large, full or custom size)
 			if( $image2 ) {
