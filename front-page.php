@@ -81,7 +81,10 @@ get_header();
 			</div> 
 			<?php endif;
 
-
+			if(is_front_page()) {
+				echo do_shortcode('[parallax-scroll id="386"]');
+			}
+			
 			$image3 = get_field('contact_image');
 			$size3 = '50%'; // (thumbnail, medium, large, full or custom size)
 			if( $image3 ) {
