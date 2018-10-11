@@ -781,34 +781,6 @@ span.rpwwt-post-title:hover {
     left: 100%;
   }
 }
-@media only screen and (min-width:671px and max-width:980px) {
-  .decorated {
-    overflow: hidden;
-    text-align: center;
-    padding-top: 30px;
-    font-size: 25px;
-  }
-  .decorated > span {
-    position: relative;
-    display: inline-block;
-  }
-  .decorated > span:before,
-  .decorated > span:after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    border-bottom: 5px solid;
-    width: 50px;
-    /* half of limiter*/
-    margin: 0 30px;
-  }
-  .decorated > span:before {
-    right: 100%;
-  }
-  .decorated > span:after {
-    left: 100%;
-  }
-}
 /* headline decoration with lines on each side of section title */
 .section-content-blackbg {
   width: 60%;
@@ -824,7 +796,7 @@ span.rpwwt-post-title:hover {
 }
 @media only screen and (min-width:671px and max-width:980px) {
   .section-content-blackbg {
-    width: 50%;
+    width: 70%;
   }
 }
 .section-content-blackbg > a {
@@ -844,7 +816,7 @@ span.rpwwt-post-title:hover {
 }
 @media only screen and (min-width:671px and max-width:980px) {
   .section-content-whitebg {
-    width: 50%;
+    width: 70%;
   }
 }
 .black-bg {
