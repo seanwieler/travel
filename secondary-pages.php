@@ -23,7 +23,8 @@ get_header();
 		while ( have_posts() ) :
 			the_post(); 
 
-			if( is_page('about_me') ) { ?>
+			$slug = $current_page->post_name;
+			if( $slug === 'about_me' ) { ?>
 			<div class="desktop-hero"><?php echo do_shortcode('[parallax-scroll id="435"]');?></div>
 			<?php else { ?>
 				<div class="desktop-hero"><?php echo do_shortcode('[parallax-scroll id="115"]');?></div> <?php
