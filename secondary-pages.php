@@ -22,8 +22,8 @@ get_header();
 		<?php
 		while ( have_posts() ) :
 			the_post(); ?>
-			
-			<div class="desktop-hero"><?php echo do_shortcode('[parallax-scroll id="115"]');?></div>
+
+			<div class="desktop-hero"><?php echo do_shortcode('[parallax-scroll id="435"]');?></div>
 			<?php
 
 			$image = get_field('hero_image');
