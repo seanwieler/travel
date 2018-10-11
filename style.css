@@ -511,15 +511,12 @@ a:hover,
 a:active {
   outline: 0;
 }
-.ab-block-post-grid h2 a {
-  color: #fff;
-}
-.ab-block-post-grid h2 a:hover {
-  color: #5a3fd6;
-  text-decoration: none;
-}
 .ab-block-post-grid .ab-block-post-grid-link {
   color: #fff;
+}
+.ab-block-post-grid .ab-block-post-grid-link:hover {
+  color: #5a3fd6;
+  text-decoration: none;
 }
 /*--------------------------------------------------------------
 ## Menus
