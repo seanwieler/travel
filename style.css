@@ -1196,6 +1196,11 @@ header .site-branding .site-description {
   display: inline-block;
   width: 33%;
 }
+@media only screen and (max-width:670px) {
+  .rpw-home aside#recent-posts-widget-with-thumbnails-3 > * > ul > li {
+    width: 100%;
+  }
+}
 .rpw-home aside#recent-posts-widget-with-thumbnails-3 > * > ul > li img {
   width: 100%;
   height: auto;
