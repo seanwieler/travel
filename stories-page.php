@@ -36,7 +36,9 @@ get_header();
 			<?php if(get_field('section_1_content')): ?>
 			    <div class="section-content-blackbg"> <?php echo get_post_meta(get_the_ID(), "section_1_content", true); ?> </div> 
 			<?php endif;
-			
+            
+            the_content();
+            
 			$image2 = get_field('section_2_image');
 			$size2 = '50%'; // (thumbnail, medium, large, full or custom size)
 			if( $image2 ) {
