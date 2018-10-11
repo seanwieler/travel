@@ -859,6 +859,10 @@ aside#recent-posts-widget-with-thumbnails-3 {
     display: none;
   }
 }
+article.has-thumb {
+  margin-left: 10%;
+  margin-right: 10%;
+}
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
