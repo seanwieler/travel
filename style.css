@@ -524,6 +524,12 @@ a:active {
   color: #5a3fd6;
   text-decoration: underline;
 }
+.rpwwt-post-categories a {
+  color: #aaa;
+}
+.rpwwt-post-categories a:hover {
+  color: #5a3fd6;
+}
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
