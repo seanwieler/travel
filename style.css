@@ -521,6 +521,10 @@ a:active {
 .ab-block-post-grid h2 a {
   color: #fff;
 }
+#tips li a:hover {
+  color: #5a3fd6;
+  text-decoration: underline;
+}
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
