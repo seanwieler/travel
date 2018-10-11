@@ -48,7 +48,7 @@ get_header();
 			$image2 = get_field('section_2_image');
 			$size2 = '50%'; // (thumbnail, medium, large, full or custom size)
 			if( $image2 ) {?>
-				<div><?php echo wp_get_attachment_image( $image, $size );?></div><?php
+				<div><?php echo wp_get_attachment_image( $image2, $size2 );?></div><?php
 			} ?>
 
 			<?php if(get_field('section_2_title')): ?>
