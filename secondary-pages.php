@@ -25,10 +25,9 @@ get_header();
 
 			if( is_page('about_me') ) { ?>
 			<div class="desktop-hero"><?php echo do_shortcode('[parallax-scroll id="435"]');?></div>
-			<?php else {
-				<div class="desktop-hero"><?php echo do_shortcode('[parallax-scroll id="115"]');?></div>
+			<?php else { ?>
+				<div class="desktop-hero"><?php echo do_shortcode('[parallax-scroll id="115"]');?></div> <?php
 			}
-			<?php
 
 			$image = get_field('hero_image');
 			$size = '50%'; // (thumbnail, medium, large, full or custom size)
