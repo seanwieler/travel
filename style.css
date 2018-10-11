@@ -517,6 +517,9 @@ a:active {
 .ab-block-post-grid h2 a:hover {
   text-decoration: none;
 }
+.ab-block-post-grid .ab-block-post-grid-link {
+  color: #ff0;
+}
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
