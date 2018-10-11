@@ -511,6 +511,9 @@ a:hover,
 a:active {
   outline: 0;
 }
+.ab-block-post-grid h2 a {
+  color: #fff;
+}
 .ab-block-post-grid h2 a:hover {
   text-decoration: none;
 }
