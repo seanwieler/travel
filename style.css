@@ -493,7 +493,7 @@ table {
 ## Links
 --------------------------------------------------------------*/
 a {
-  color: #ff0;
+  color: #fff;
   text-decoration: none;
   /*&:visited {
 		color: inherit;
@@ -518,7 +518,7 @@ a:active {
   text-decoration: none;
 }
 .ab-block-post-grid .ab-block-post-grid-link {
-  color: #ff0;
+  color: #fff;
 }
 /*--------------------------------------------------------------
 ## Menus
