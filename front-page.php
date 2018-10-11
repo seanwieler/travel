@@ -22,14 +22,11 @@ get_header();
 		<?php
 		while ( have_posts() ) :
 			the_post();
-			?>
-			<div class="desktop-hero"><?php echo do_shortcode('[parallax-scroll id="115"]');?></div>
-			<?php
-
+			
 			$image = get_field('hero_image');
 			$size = '50%'; // (thumbnail, medium, large, full or custom size)
 			if( $image ) { ?>
-				<div class="mobile-hero"><?php echo wp_get_attachment_image( $image, $size );?></div><?php
+				<div><?php echo wp_get_attachment_image( $image, $size );?></div><?php
 			}?>
 
 			<?php if(get_field('section_1_title')): ?>
