@@ -794,7 +794,7 @@ span.rpwwt-post-title:hover {
 }
 @media only screen and (max-width:670px) {
   .section-content-blackbg {
-    width: 800px;
+    width: 80%;
   }
 }
 @media only screen and (min-width:671px and max-width:980px) {
@@ -814,7 +814,7 @@ span.rpwwt-post-title:hover {
 }
 @media only screen and (max-width:670px) {
   .section-content-whitebg {
-    width: 800px;
+    width: 80%;
   }
 }
 @media only screen and (min-width:671px and max-width:980px) {
