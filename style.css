@@ -502,7 +502,7 @@ a {
 a:hover,
 a:focus,
 a:active {
-  color: midnightblue;
+  color: #5a3fd6;
 }
 a:focus {
   outline: thin dotted;
