@@ -899,6 +899,7 @@ article.has-thumb {
 }
 .rpwwt-widget ul li {
   overflow: hidden;
+  margin: 0;
 }
 /*--------------------------------------------------------------
 ## Posts and pages
