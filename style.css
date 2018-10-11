@@ -905,7 +905,7 @@ article.has-thumb {
   color: #000;
 }
 .ab-post-grid-items.is-list {
-  padding: 60px 0 0 0;
+  padding-top: 60px;
 }
 /*--------------------------------------------------------------
 ## Posts and pages
