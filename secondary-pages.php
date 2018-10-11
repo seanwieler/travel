@@ -23,14 +23,6 @@ get_header();
 		while ( have_posts() ) :
 			the_post(); 
 
-			$slug = $current_page->post_name;
-			if( $slug === "'about-me" ) { ?>
-			<div class="desktop-hero"><?php echo do_shortcode('[parallax-scroll id="435"]');?></div>
-			<?php echo $slug ?>
-			<?php } else { ?>
-				<div class="desktop-hero"><?php echo do_shortcode('[parallax-scroll id="115"]');?></div> <?php
-			}
-
 			$image = get_field('hero_image');
 			$size = '50%'; // (thumbnail, medium, large, full or custom size)
 			if( $image ) { ?>
