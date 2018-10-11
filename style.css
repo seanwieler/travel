@@ -1199,7 +1199,7 @@ header .site-branding .site-description {
 @media only screen and (max-width:670px) {
   .rpw-home aside#recent-posts-widget-with-thumbnails-3 > * > ul > li {
     width: 100%;
-    padding-bottom: 20px;
+    padding: 0 10px 20px 10px;
   }
 }
 .rpw-home aside#recent-posts-widget-with-thumbnails-3 > * > ul > li img {
