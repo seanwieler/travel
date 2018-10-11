@@ -904,6 +904,9 @@ article.has-thumb {
 .rpwwt-post-excerpt a {
   color: #000;
 }
+.ab-post-grid-items.is-list {
+  padding: 60px 0 0 0;
+}
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
