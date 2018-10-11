@@ -794,6 +794,11 @@ span.rpwwt-post-title:hover {
     width: 60%;
   }
 }
+@media only screen and (min-width:671px and max-width:980px) {
+  .section-content-blackbg {
+    width: 100%;
+  }
+}
 .section-content-blackbg > a {
   font-size: 2em;
 }
@@ -807,6 +812,11 @@ span.rpwwt-post-title:hover {
 @media only screen and (max-width:670px) {
   .section-content-whitebg {
     width: 60%;
+  }
+}
+@media only screen and (min-width:671px and max-width:980px) {
+  .section-content-whitebg {
+    width: 100%;
   }
 }
 .black-bg {
