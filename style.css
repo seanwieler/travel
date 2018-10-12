@@ -847,6 +847,10 @@ span.rpwwt-post-title:hover {
     width: 80%;
   }
 }
+.section-content-whitebg > a {
+  font-size: 2em;
+  color: #000;
+}
 .black-bg {
   color: #ffffff;
   margin-bottom: 40px;
