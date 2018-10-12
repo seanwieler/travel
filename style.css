@@ -849,6 +849,8 @@ span.rpwwt-post-title:hover {
 }
 .section-content-whitebg > a {
   font-size: 2em;
+}
+.section-content-whitebg > h2 {
   color: #000;
 }
 .black-bg {
