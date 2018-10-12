@@ -1122,6 +1122,9 @@ textarea {
 body.blog {
   color: #fff;
 }
+.nav-links {
+  margin: 50px;
+}
 .single-post {
   color: #fff;
 }
