@@ -781,7 +781,7 @@ span.rpwwt-post-title:hover {
     left: 100%;
   }
 }
-@media only screen and (max-width:670px) {
+@media only screen and (min-width:671px and max-width:980px) {
   .decorated {
     overflow: hidden;
     text-align: center;
