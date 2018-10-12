@@ -79,7 +79,7 @@ get_header();
 				echo wp_get_attachment_image( $image3, $size3 );
 			}
 
-			<?php if(get_field('contact_title')): ?>
+			if(get_field('contact_title')): ?>
 			<div class="decorated black-bg"><span><?php echo get_post_meta(get_the_ID(), "contact_title", true);?></span></div>
 			<?php endif;
 
