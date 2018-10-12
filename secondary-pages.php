@@ -30,11 +30,11 @@ get_header();
 			}?>
 
 			<?php if(get_field('section_1_title')): ?>
-			    <h2 class="decorated black-bg"><span><?php the_field('section_1_title');?></span></h2> 
+			    <div class="decorated black-bg"><span><?php the_field('section_1_title');?></span></div> 
 			<?php endif;?>
 
 			<?php if(get_field('section_1_content')): ?>
-			    <div class="section-content-blackbg"> <?php echo get_post_meta(get_the_ID(), "section_1_content", true); ?> </div> 
+			    <div class="section-content-blackbg"> <?php echo get_post_meta(get_the_ID(), "section_1_content", true); ?></div> 
 			<?php endif;
 			
 			$image2 = get_field('section_2_image');
