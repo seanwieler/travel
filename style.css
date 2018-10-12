@@ -1198,6 +1198,7 @@ header .site-branding .site-description {
 @media only screen and (max-width:670px) {
   #tips {
     width: 300px;
+    font-size: 18px;
   }
 }
 #tips li {
