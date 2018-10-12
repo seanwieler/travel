@@ -76,9 +76,13 @@ get_header();
 			$size3 = '50%'; // (thumbnail, medium, large, full or custom size)
 			if( $image3 ) {
 				echo wp_get_attachment_image( $image3, $size3 );
-			}?>
+			}
 
-			<?php if(get_field('contact_content')): ?>
+			if(get_field('contact_title')): ?>
+			<div class="decorated black-bg"><span><?php echo get_post_meta(get_the_ID(), "contact_title", true);?></span></div>
+			<?php endif;
+
+			if(get_field('contact_content')): ?>
 			<div class="section-content-blackbg"> <?php echo get_post_meta(get_the_ID(), "contact_content", true); ?> </div> 
 			<?php endif;
 
