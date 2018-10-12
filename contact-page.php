@@ -30,7 +30,7 @@ get_header();
 			}?>
 
 			<?php if(get_field('section_1_title')): ?>
-			    <h2 class="decorated black-bg"><span><?php the_field('section_1_title');?></span></h2> 
+			    <div class="decorated black-bg"><span><?php the_field('section_1_title');?></span></div> 
 			<?php endif;?>
 
 			<?php if(get_field('section_1_content')): ?>

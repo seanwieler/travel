@@ -45,7 +45,7 @@ get_header();
 
             <?php if(get_field('section_2_title')): ?>
                 <div class="rp-background">
-                    <h2 class="decorated white-bg"><span><?php echo get_post_meta(get_the_ID(), "section_2_title", true);?></span></h2>
+                    <div class="decorated white-bg"><span><?php echo get_post_meta(get_the_ID(), "section_2_title", true);?></span></div>
                     <?php if(get_field('section_2_content')): ?>
                         <div class="section-content-whitebg"> <?php the_field('section_2_content'); ?> </div>
 					<?php endif;?>
@@ -63,7 +63,7 @@ get_header();
 			
 			<?php if(get_field('section_3_title')): ?>
 			<div class="rp-background">
-				<h2 class="decorated white-bg"><span><?php echo get_post_meta(get_the_ID(), "section_3_title", true);?></span></h2> 
+				<div class="decorated white-bg"><span><?php echo get_post_meta(get_the_ID(), "section_3_title", true);?></span></div> 
 			<?php endif; ?>
 
 			<?php if(get_field('section_3_content')): ?>
