@@ -1199,6 +1199,7 @@ header .site-branding .site-description {
   #tips {
     width: 300px;
     font-size: 18px;
+    text-align: center;
   }
 }
 #tips li {
