@@ -830,6 +830,11 @@ span.rpwwt-post-title:hover {
 .section-content-blackbg > a {
   font-size: 2em;
 }
+@media only screen and (max-width:670px) {
+  .section-content-blackbg > a {
+    font-size: 20px;
+  }
+}
 .section-content-whitebg {
   width: 60%;
   margin-left: auto;
