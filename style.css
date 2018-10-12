@@ -1249,6 +1249,7 @@ header .site-branding .site-description {
 .rpw-home aside#recent-posts-widget-with-thumbnails-3 > * > ul > li img {
   width: 100%;
   height: auto;
+  max-width: none;
 }
 h6.widget-title {
   color: #ffffff;
