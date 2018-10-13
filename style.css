@@ -379,7 +379,7 @@ textarea {
 }
 @font-face {
   font-family: America;
-  src: url("~/fonts/america-regular.otf");
+  src: url('~/fonts/america.otf') format('truetype');
   font-weight: normal;
 }
 h1,
@@ -730,20 +730,12 @@ span.rpwwt-post-title:hover {
 }
 .hero-fix {
   position: relative;
+  width: 100%;
   height: 600px;
 }
 @media only screen and (max-width:670px) {
   .hero-fix {
     display: none;
-  }
-}
-@media only screen and (max-width:670px) {
-  .hero-phone {
-    background-image: url("~/home-hero-phone.jpg");
-    background-color: #cccccc;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
   }
 }
 .page-title {
