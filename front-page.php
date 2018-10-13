@@ -22,7 +22,7 @@ get_header();
 		<?php
 		while ( have_posts() ) :
 			the_post();
-			
+
 			$image = get_field('hero_image');
 			$size = '50%'; // (thumbnail, medium, large, full or custom size)
 			if( $image ) { ?>
