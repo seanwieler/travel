@@ -740,7 +740,7 @@ span.rpwwt-post-title:hover {
     width: 100%;
     /* background-position: center; */
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: 50% 50%;
   }
 }
 .page-title {
