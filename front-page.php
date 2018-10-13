@@ -22,14 +22,12 @@ get_header();
 		<?php
 		while ( have_posts() ) :
 			the_post();
-			
-			
-			$size = '50%'; // (thumbnail, medium, large, full or custom size)
-			if(get_field('hero_image')): { ?>
+		
+			if('hero_image') { ?>
 				<div class="hero-fix" style="background: url(<?php the_field('hero_image'); ?>);">
 					<?php if(get_field('hero_text')): ?>
 					<div class="page-title">
-						<?php the_field('hero_text'); ?>
+						<?php the_field('hero_text');?>
 					</div>
 			<?php endif;?>
 				</div><?php
