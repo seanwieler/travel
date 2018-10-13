@@ -736,8 +736,6 @@ span.rpwwt-post-title:hover {
   .hero-fix {
     background-image: url("~/home-hero-phone.jpg");
     background-color: #cccccc;
-    height: 300px;
-    width: 100%;
     /* background-position: center; */
     background-repeat: no-repeat;
     background-size: contain;
