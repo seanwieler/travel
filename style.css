@@ -734,12 +734,15 @@ span.rpwwt-post-title:hover {
 }
 .page-title {
   font-family: 'america', sans-serif;
-  font-size: 100px;
+  font-size: 177px;
+  text-align: center;
   color: #fff;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  width: 100%;
+  line-height: 1em;
 }
 /* headlines with lines */
 .decorated {
