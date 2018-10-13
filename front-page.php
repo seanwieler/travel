@@ -23,7 +23,7 @@ get_header();
 		while ( have_posts() ) :
 			the_post();
 
-			<?php if(get_field('section_1_title')): ?>
+			if(get_field('section_1_title')): ?>
 			<div class="decorated black-bg"><span><?php the_field('section_1_title');?></span></div>
 			<?php endif;?>
 
