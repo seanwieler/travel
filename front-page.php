@@ -23,10 +23,10 @@ get_header();
 		while ( have_posts() ) :
 			the_post();
 			
-			$image = get_field('hero_image');
+			
 			$size = '50%'; // (thumbnail, medium, large, full or custom size)
-			if( $image ) { ?>
-				<div class="hero-fix" style="background: url(<?php the_field( $image ); ?>);">
+			if(get_field('hero_image')): { ?>
+				<div class="hero-fix" style="background: url(<?php the_field('hero_image'); ?>);">
 					<?php if(get_field('hero_text')): ?>
 					<div class="page-title">
 						<?php the_field('hero_text'); ?>
