@@ -745,11 +745,6 @@ span.rpwwt-post-title:hover {
   width: 100%;
   line-height: 1em;
 }
-@media only screen and (max-width:670px) {
-  .page-title {
-    display: none;
-  }
-}
 /* headlines with lines */
 .decorated {
   overflow: hidden;
