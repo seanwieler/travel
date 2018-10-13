@@ -26,7 +26,7 @@ get_header();
 			$image = get_field('hero_image');
 			$size = '50%'; // (thumbnail, medium, large, full or custom size)
 			if( $image ) { ?>
-				<div class="hero-fix" style="background: url(<?php echo wp_get_attachment_image( $image, $size );?>);">
+				<div class="hero-fix" style="background: url(<?php echo the_field( $image, $size );?>);">
 					<?php if(get_field('section_1_title')): ?>
 					<div class="black-bg">
 						<span><?php the_field('hero_text');?></span>
