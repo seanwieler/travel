@@ -734,8 +734,8 @@ span.rpwwt-post-title:hover {
 }
 @media only screen and (max-width:670px) {
   .hero-fix {
-    width: 100%;
-    height: auto;
+    background-image: url("~/hero-image-small.jpg");
+    background-color: #cccccc;
   }
 }
 .page-title {
