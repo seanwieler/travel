@@ -23,14 +23,10 @@ get_header();
 		while ( have_posts() ) :
 			the_post();
 		
-			if('hero_image') { ?>
-				<div class="hero-fix hero-phone" style="background: url(<?php the_field('hero_image'); ?>);">
-					<?php if(get_field('hero_text')): ?>
-					<div class="page-title">
-						<?php the_field('hero_text');?>
-					</div>
-			<?php endif;?>
-				</div><?php
+			$image = get_field('hero_image');
+			$size = '50%'; // (thumbnail, medium, large, full or custom size)
+			if( $image ) { ?>
+				<div><?php echo wp_get_attachment_image( $image, $size );?></div><?php
 			}?>
 
 			<div id="mainPhoto" style="background-image: url(<?php the_field('background_image'); ?>);">
