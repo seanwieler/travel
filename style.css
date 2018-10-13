@@ -377,6 +377,11 @@ textarea {
   font-size: 1rem;
   line-height: 1.5;
 }
+@font-face {
+  font-family: America;
+  src: url("~/fonts/america-regular.otf");
+  font-weight: normal;
+}
 h1,
 h2,
 h3,
@@ -725,6 +730,12 @@ span.rpwwt-post-title:hover {
 }
 .hero-fix {
   height: 600px;
+}
+.page-title {
+  font-family: 'america-regular', sans-serif;
+  font-size: 100px;
+  color: #fff;
+  text-align: center;
 }
 /* headlines with lines */
 .decorated {
