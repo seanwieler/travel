@@ -736,8 +736,10 @@ span.rpwwt-post-title:hover {
   .hero-fix {
     background-image: url("~/hero-image-small.jpg");
     background-color: #cccccc;
-    height: 300px;
-    width: 400px;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 .page-title {
