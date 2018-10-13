@@ -733,6 +733,13 @@ span.rpwwt-post-title:hover {
   width: 100%;
   height: 600px;
 }
+@media only screen and (max-width:670px) {
+  .hero-fix {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
 .page-title {
   font-family: 'america', sans-serif;
   font-size: 177px;
