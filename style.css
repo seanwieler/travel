@@ -734,6 +734,7 @@ span.rpwwt-post-title:hover {
 }
 @media only screen and (max-width:670px) {
   .hero-fix {
+    display: none;
     background-image: url("~/home-hero-phone.jpg");
     background-color: #cccccc;
     /* background-position: center; */
