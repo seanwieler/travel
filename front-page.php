@@ -26,16 +26,20 @@ get_header();
 			$image = get_field('hero_image');
 			$size = '50%'; // (thumbnail, medium, large, full or custom size)
 			if( $image ) { ?>
-				<div class="hero-fix" style="background: url(<?php echo wp_get_attachment_image( $image, $size );?>);">
-					<?php if(get_field('section_1_title')): ?>
-					<div class="black-bg">
-						<span><?php the_field('hero_text');?></span>
+				<div class="hero-fix" style="background: url(<?php the_field( $image ); ?>);">
+					<?php if(get_field('hero_text')): ?>
+					<div class="page-title">
+						<?php the_field('hero_text'); ?>
 					</div>
-					<?php endif;?>
+			<?php endif;?>
 				</div><?php
 			}?>
 
-			
+			<div id="mainPhoto" style="background-image: url(<?php the_field('background_image'); ?>);">
+			<div id="pageTitle">
+				<?php the_field('page_title'); ?>
+			</div>
+		</div>
 
 			<?php if(get_field('section_1_title')): ?>
 			<div class="decorated black-bg"><span><?php the_field('section_1_title');?></span></div>
