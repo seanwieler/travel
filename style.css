@@ -736,8 +736,8 @@ span.rpwwt-post-title:hover {
   .hero-fix {
     background-image: url("~/hero-image-small.jpg");
     background-color: #cccccc;
-    height: 500px;
-    width: 100px;
+    height: 300px;
+    width: 100%;
     /* background-position: center; */
     background-repeat: no-repeat;
     background-size: contain;
