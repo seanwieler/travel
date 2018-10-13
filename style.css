@@ -734,13 +734,13 @@ span.rpwwt-post-title:hover {
 }
 @media only screen and (max-width:670px) {
   .hero-fix {
-    background-image: url("~/hero-image-small.jpg");
+    background-image: url("~/home-hero-phone.jpg");
     background-color: #cccccc;
     height: 300px;
     width: 100%;
     /* background-position: center; */
     background-repeat: no-repeat;
-    background-size: 50% 50%;
+    background-size: contain;
   }
 }
 .page-title {
