@@ -781,6 +781,10 @@ span.rpwwt-post-title {
 .hero-fix {
 	position: relative;
 	height: 600px;
+	@media @phone {
+		width: 100%;
+		height: auto;
+	}
 }
 
 .page-title {
@@ -793,7 +797,10 @@ span.rpwwt-post-title {
     top: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
-    line-height: 1em;
+	line-height: 1em;
+	@media @phone {
+		font-size: 50px;
+	}
 }
 
 /* headlines with lines */

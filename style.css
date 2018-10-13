@@ -732,6 +732,12 @@ span.rpwwt-post-title:hover {
   position: relative;
   height: 600px;
 }
+@media only screen and (max-width:670px) {
+  .hero-fix {
+    width: 100%;
+    height: auto;
+  }
+}
 .page-title {
   font-family: 'america', sans-serif;
   font-size: 177px;
@@ -743,6 +749,11 @@ span.rpwwt-post-title:hover {
   transform: translate(-50%, -50%);
   width: 100%;
   line-height: 1em;
+}
+@media only screen and (max-width:670px) {
+  .page-title {
+    font-size: 50px;
+  }
 }
 /* headlines with lines */
 .decorated {
