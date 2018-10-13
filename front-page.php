@@ -24,7 +24,7 @@ get_header();
 			the_post();
 		
 			if('hero_image') { ?>
-				<div class="hero-fix" style="background: url(<?php the_field('hero_image'); ?>);">
+				<div class="hero-fix hero-phone" style="background: url(<?php the_field('hero_image'); ?>);">
 					<?php if(get_field('hero_text')): ?>
 					<div class="page-title">
 						<?php the_field('hero_text');?>
