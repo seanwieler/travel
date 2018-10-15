@@ -791,6 +791,7 @@ span.rpwwt-post-title:hover {
   .decorated > span {
     position: relative;
     display: inline-block;
+    width: 150px;
   }
   .decorated > span:before,
   .decorated > span:after {
