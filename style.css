@@ -785,11 +785,7 @@ span.rpwwt-post-title:hover {
   .decorated > span:before,
   .decorated > span:after {
     content: '';
-    position: absolute;
-    top: 50%;
-    border-bottom: 5px solid;
     width: 150px;
-    margin: 0 30px;
   }
 }
 /* headline decoration with lines on each side of section title */
