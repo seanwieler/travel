@@ -782,17 +782,6 @@ span.rpwwt-post-title:hover {
   }
 }
 @media only screen and (min-width:671px and max-width:980px) {
-  .decorated {
-    overflow: hidden;
-    text-align: center;
-    padding-top: 30px;
-    font-size: 25px;
-  }
-  .decorated > span {
-    position: relative;
-    display: inline-block;
-    width: 150px;
-  }
   .decorated > span:before,
   .decorated > span:after {
     content: '';
@@ -800,14 +789,7 @@ span.rpwwt-post-title:hover {
     top: 50%;
     border-bottom: 5px solid;
     width: 150px;
-    /* half of limiter*/
     margin: 0 30px;
-  }
-  .decorated > span:before {
-    right: 100%;
-  }
-  .decorated > span:after {
-    left: 100%;
   }
 }
 /* headline decoration with lines on each side of section title */
