@@ -798,7 +798,7 @@ span.rpwwt-post-title:hover {
     position: absolute;
     top: 50%;
     border-bottom: 5px solid;
-    width: 100px;
+    width: 150px;
     /* half of limiter*/
     margin: 0 30px;
   }
