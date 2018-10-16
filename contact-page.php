@@ -50,7 +50,7 @@ get_header();
 		?>
 
 		<?php
-		$travel = pods('travel_blog', 568)
+		$travel = pods('travel_blog', 568);
 		error_log(print_r($travel, true));
 		?>
 
