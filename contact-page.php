@@ -51,10 +51,15 @@ get_header();
 
 		<?php
 
-		$travel = pods('travel_blog', 568);
+		$output = get_posts(array(
+			'post_type' => 'travel_blog'
+		))
+		error_log(print_r($output, true));
+
+		/*$travel = pods('travel_blog', 568);
 		error_log(print_r($travel->display('city'), true));
 		error_log("-------------------------------------");
-		error_log(print_r($travel->field('city'), true));
+		error_log(print_r($travel->field('city'), true));*/
 		?>
 
 		</main><!-- #main -->
