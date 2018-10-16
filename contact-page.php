@@ -50,10 +50,11 @@ get_header();
 		?>
 
 		<?php
+
 		$travel = pods('travel_blog', 568);
-		error_log(print_r($travel->fields['quote'], true));
+		error_log(print_r($travel->display('city'), true));
 		error_log("-------------------------------------");
-		error_log(print_r($travel->field('quote'), true));
+		error_log(print_r($travel->field('city'), true));
 		?>
 
 		</main><!-- #main -->
