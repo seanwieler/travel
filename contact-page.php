@@ -49,6 +49,11 @@ get_header();
 		endwhile; // End of the loop.
 		?>
 
+		<?php
+		$travel = pods('travel_blog', 568)
+		error_log(print_r($travel, true));
+		?>
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
