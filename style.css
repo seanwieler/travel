@@ -752,17 +752,14 @@ span.rpwwt-post-title:hover {
   width: 400px;
   /* half of limiter*/
   margin: 0 30px;
+  /*@media @tablet {
+				width: 150px;
+			}*/
 }
 @media only screen and (max-width:670px) {
   .decorated > span:before,
   .decorated > span:after {
     width: 50px;
-  }
-}
-@media only screen and (min-width:671px and max-width:980px) {
-  .decorated > span:before,
-  .decorated > span:after {
-    width: 150px;
   }
 }
 .decorated > span:before {
@@ -790,12 +787,13 @@ span.rpwwt-post-title:hover {
 		}
 	}
 }*/
-/* @media @tablet {
-	.decorated > span:before, .decorated > span:after {
+@media only screen and (min-width:671px and max-width:980px) {
+  .decorated > span:before,
+  .decorated > span:after {
     content: '';
     width: 150px;
-	}
-}*/
+  }
+}
 /* headline decoration with lines on each side of section title */
 .section-content-blackbg {
   width: 60%;
