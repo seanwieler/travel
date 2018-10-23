@@ -733,6 +733,12 @@ span.rpwwt-post-title:hover {
   text-transform: uppercase;
   font-weight: 700;
 }
+@media only screen and (max-width:670px) {
+  .decorated {
+    padding-top: 30px;
+    font-size: 25px;
+  }
+}
 .decorated > span {
   position: relative;
   display: inline-block;
@@ -747,47 +753,49 @@ span.rpwwt-post-title:hover {
   /* half of limiter*/
   margin: 0 30px;
 }
+@media only screen and (max-width:670px) {
+  .decorated > span:before,
+  .decorated > span:after {
+    width: 50px;
+  }
+}
+@media only screen and (min-width:671px and max-width:980px) {
+  .decorated > span:before,
+  .decorated > span:after {
+    width: 150px;
+  }
+}
 .decorated > span:before {
   right: 100%;
 }
 .decorated > span:after {
   left: 100%;
 }
-@media only screen and (max-width:670px) {
-  .decorated {
-    overflow: hidden;
-    text-align: center;
-    padding-top: 30px;
-    font-size: 25px;
-  }
-  .decorated > span {
-    position: relative;
-    display: inline-block;
-  }
-  .decorated > span:before,
-  .decorated > span:after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    border-bottom: 5px solid;
-    width: 50px;
-    /* half of limiter*/
-    margin: 0 30px;
-  }
-  .decorated > span:before {
-    right: 100%;
-  }
-  .decorated > span:after {
-    left: 100%;
-  }
-}
-@media only screen and (min-width:671px and max-width:980px) {
-  .decorated > span:before,
-  .decorated > span:after {
+/* @media @phone {
+	.decorated {
+		
+	> span {
+		position: relative;
+		display: inline-block;
+		&:before, &:after {
+			content: '';
+			position: absolute;
+			top: 50%;
+			border-bottom: 5px solid;
+			width: 50px; 
+			margin: 0 30px;
+		}
+		&:before {right: 100%;}
+		&:after {left: 100%;}
+		}
+	}
+}*/
+/* @media @tablet {
+	.decorated > span:before, .decorated > span:after {
     content: '';
     width: 150px;
-  }
-}
+	}
+}*/
 /* headline decoration with lines on each side of section title */
 .section-content-blackbg {
   width: 60%;
